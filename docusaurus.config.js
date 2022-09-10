@@ -60,12 +60,12 @@ const config = {
         title: '春松客服',
         logo: {
           alt: '春松客服图标',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'index',
             position: 'left',
             label: '教程',
           },
@@ -85,7 +85,7 @@ const config = {
             items: [
               {
                 label: '快速上手',
-                to: '/docs/intro',
+                to: '/docs/index',
               },
             ],
           },
@@ -112,7 +112,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 春松客服, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 春松客服, Inc. 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建`,
       },
       prism: {
         theme: lightCodeTheme,

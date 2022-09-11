@@ -38,7 +38,7 @@ Messenger 是 Facebook 旗下的最主要的即时通信软件，支持多种平
 
 ## 使用指南
 
-* [Messenger 渠道配置](/products/cskefu/channels/messenger/install.html)
-* [Facebook OTN 主动推送指南](/products/cskefu/channels/messenger/facebook-otn.html)
-* [Messenger 渠道配置机器人客服](/products/cskefu/channels/messenger/messenger-chatbot.html)
-* [Messenger 管理机器人客服对话](/products/cskefu/channels/messenger/message-types.html)
+* [Messenger 渠道配置](install.html)
+* [Facebook OTN 主动推送指南](facebook-otn.html)
+* [Messenger 渠道配置机器人客服](messenger-chatbot.html)
+* [Messenger 管理机器人客服对话](message-types.html)

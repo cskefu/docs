@@ -4,7 +4,7 @@ sidebar_position: 13
 
 # FAQ
 
-以下总结[春松客服](/products/cskefu/index.html)的大家关心的常问问题，是基于企业客户/开发者的咨询整理而来。
+以下总结[春松客服](index.html)的大家关心的常问问题，是基于企业客户/开发者的咨询整理而来。
 
 ## 问答列表
 
@@ -30,19 +30,19 @@ sidebar_position: 13
 
 免费模块目前支持 PC，Mobile 浏览器，开源版本就可以。APP 需要对接 SDK，这个有额外的开发工作，我们可以定制开发。
 
-付费模块支持安装 [Facebook Messenger](/products/cskefu/channels/messenger/index.html) 渠道插件。
+付费模块支持安装 [Facebook Messenger](channels/messenger/index.html) 渠道插件。
 
 **问：如果我们也需要给商家开坐席,也是能支持的吗？**
 
-支持，春松客服内置的权限，组织机构管理使用参考[账号和权限](/products/cskefu/accounting.html)。
+支持，春松客服内置的权限，组织机构管理使用参考[账号和权限](accounting.html)。
 
 **问：那怎么能互相交流？后台看到坐席了，前端是不是还要在跑一个程序？**
 
-访客可以用网页客户端插件，参考[文档](/products/cskefu/work.html)。
+访客可以用网页客户端插件，参考[文档](work.html)。
 
 **问：有没有 java 项目可以直接导入 idea？**
 
-[开发环境搭建](/products/cskefu/osc/engineering.html)
+[开发环境搭建](osc/engineering.html)
 
 **问：为啥我这里客服没有管理员权限就看不到对话？**
 
@@ -55,7 +55,7 @@ sidebar_position: 13
 
 **问：有本地部署的教程文档吗？**
 
-[参考春松客服部署方案](/products/cskefu/deploy.html)
+[参考春松客服部署方案](deploy.html)
 
 **问：我想改成异步触发对话，后台重新输出了一下页面作用域里面的值，发现参数太多，web 通信时候调用得 socket.io.js 有没有相关的文档和参数解释？**
 
@@ -71,7 +71,7 @@ socketio 是对 websocket 进行封装，是 websocket 协议的一种实现，�
 
 **问：机器人自动回复模块在哪？**
 
-机器人客服参考[文档](https://docs.chatopera.com/products/cskefu/work-chatbot/index.html)。
+机器人客服参考[文档](https://docs.chatopera.comwork-chatbot/index.html)。
 
 **问：多轮对话,看上去就是在编辑脚本,有对分支逻辑的支持吗?**
 
@@ -104,6 +104,6 @@ Chatopera 全部开源项目查看 [https://github.com/chatopera](https://github
 
 **问：这个项目要怎么启动呢**
 
-- 服务器部署：<https://docs.chatopera.com/products/cskefu/deploy.html>
+- 服务器部署：<https://docs.chatopera.comdeploy.html>
 
-- 开发环境搭建：<https://docs.chatopera.com/products/cskefu/osc/engineering.html>
+- 开发环境搭建：<https://docs.chatopera.comosc/engineering.html>

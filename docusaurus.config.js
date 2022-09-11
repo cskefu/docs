@@ -10,7 +10,7 @@ const config = {
   tagline: '为千万企业上线开源客服系统',
   url: 'https://cskefu.github.io',
   baseUrl: '/cskefu-docs/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 

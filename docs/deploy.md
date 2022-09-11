@@ -173,8 +173,8 @@ docker-compose up -d contact-center
 
 ## 下一步
 
-- [系统初始化：建立组织机构、账号、坐席和角色等](/products/cskefu/initialization.html)
+- [系统初始化：建立组织机构、账号、坐席和角色等](initialization.html)
 
-- [系统维护：备份、升级和恢复回退等](/products/cskefu/osc/maintainence.html)
+- [系统维护：备份、升级和恢复回退等](osc/maintainence.html)
 
 - [春松客服配置 CDN 和 HTTPS | 春松客服](https://chatopera.blog.csdn.net/article/details/105820829)

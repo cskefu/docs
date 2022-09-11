@@ -280,7 +280,7 @@ Facebook 将该主页发生的【发消息】相关的事件分为很多种类�
 
 ## 最佳实践
 
-* [Facebook OTN 主动推送指南](/products/cskefu/channels/messenger/facebook-otn.html)
-* [Messenger 渠道配置机器人客服](/products/cskefu/channels/messenger/messenger-chatbot.html)
-* [Messenger 管理机器人客服对话](/products/cskefu/channels/messenger/message-types.html)
-* [如何经营好 Facebook 主页，吸引粉丝和维护客户关系](https://chatopera.blog.csdn.net/article/details/113973481)
+* [Messenger 渠道配置](install.html)
+* [Facebook OTN 主动推送指南](facebook-otn.html)
+* [Messenger 渠道配置机器人客服](messenger-chatbot.html)
+* [Messenger 管理机器人客服对话](message-types.html)

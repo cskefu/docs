@@ -104,6 +104,6 @@ Chatopera 全部开源项目查看 [https://github.com/chatopera](https://github
 
 **问：这个项目要怎么启动呢**
 
-- 服务器部署：<https://docs.chatopera.comdeploy.html>
+- 服务器部署：<https://docs.cskefu.comdeploy.html>
 
-- 开发环境搭建：<https://docs.chatopera.comosc/engineering.html>
+- 开发环境搭建：<https://docs.cskefu.comosc/engineering.html>

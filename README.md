@@ -1,6 +1,6 @@
 <div align=right>
 
-[主页](https://www.cskefu.com/)　|　[Chatopera 云服务](https://bot.chatopera.com/)　|　[文档中心](https://docs.chatopera.com)　|　[博客专栏](https://cskefu.blog.csdn.net/)　|　[更新日志](https://status.chatopera.com)　|　[帮助](https://github.com/cskefu/cskefu-docs/issues/new/choose)
+[主页](https://www.cskefu.com/)　|　[Chatopera 云服务](https://bot.chatopera.com/)　|　[文档中心](https://github.com/cskefu/cskefu/)　|　[博客专栏](https://cskefu.blog.csdn.net/)　|　[更新日志](https://status.chatopera.com)　|　[帮助](https://github.com/cskefu/cskefu-docs/issues/new/choose)
 
 </div>
 

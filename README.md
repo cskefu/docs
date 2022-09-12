@@ -17,3 +17,5 @@
 ## 开源许可协议
 
 [Apache License Version 2.0](https://www.cskefu.com/2022/06/24/cskefu-opensource-license/)
+
+![img](https://github.com/cskefu/cskefu/blob/osc/public/assets/screenshot-20220323-163051.jpg)

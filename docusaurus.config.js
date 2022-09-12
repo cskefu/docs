@@ -67,9 +67,10 @@ const config = {
             type: 'doc',
             docId: 'index',
             position: 'left',
-            label: '教程',
+            label: '文档中心',
           },
-          {to: '/blog', label: '博客', position: 'left'},
+          {to: 'https://github.com/cskefu/cskefu', label: '源码仓库', position: 'left'},
+          {to: 'https://www.cskefu.com/', label: '官网', position: 'left'},
           {
             href: 'https://github.com/cskefu/cskefu-docs',
             label: 'GitHub',

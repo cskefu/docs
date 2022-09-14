@@ -6,8 +6,6 @@ sidebar_position: 1
 
 [https://www.cskefu.com](https://www.cskefu.com)
 
-![春松客服](images/products/cosin/g2.jpg)
-
 春松客服是拥有坐席管理、渠道管理、机器人客服、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。
 
 ![用户案例](images/products/cskefu/customers-2021.jpg)
@@ -66,12 +64,12 @@ sidebar_position: 1
 
 | 网站                        | 用户名 | 密码      |
 | --------------------------- | ------ | --------- |
-| <https://cc.chatopera.com/> | admin  | admin1234 |
+| <https://demo.cskefu.com/> | admin  | admin1234 |
 <!-- markup:table-caption 演示环境信息 -->
 
 提示：【演示环境】定时刷新且任何人都可以登录，不要更改密码和创建敏感数据，因该网站会**频繁重置数据和升级**，**该网站不能作为生产系统评估**，仅作为应用可行性参考；评估系统，比如压力测试和性能测试，请按照部署文档[^deploy]操作获得新的服务实例。
 
-[^deploy]: 部署文档 <https://docs.chatopera.com/products/cskefu/deploy.html>
+[^deploy]: 部署文档 <https://docs.cskefu.com/docs/deploy>
 
 ## 使用场景角色
 
@@ -107,17 +105,7 @@ sidebar_position: 1
 
 <https://www.cskefu.com/moment/825.html/>
 
-用户使用文档（PDF）是与[文档中心](https://docs.chatopera.com/products/cskefu/index.html)的内容一致的 PDF 文件。PDF 格式方便查看、搜索和打印。使用时注意版本更新，相对而言，[网站](https://docs.chatopera.com/products/cskefu/index.html) 是最新的，注册春松客服官网：<https://www.cskefu.com/>，及时获得更新提醒。
-
-## 质量管理
-
-解读 Chatopera 质量管理体系，上线定制化的客服系统。如何合理的规划测试工作？怎样搭建质量管理的支撑系统？Chatopera 反思、精进产品开发和服务支持体系，认真负责的帮助客户落地客服系统。本视频系 Chatopera 质量保证人员根据实际工作内容总结整理。
-
-在线观看《解读 Chatopera 质量管理体系》[^cskefuquality2019]，同时，该视频相关的[文章](https://mp.weixin.qq.com/s/sah0e0q3HH2Ex4wZyfJXIg)中也有详细介绍。
-
-[^cskefuquality2019]: 《解读 Chatopera 质量管理体系》，<https://mp.weixin.qq.com/s/AUWbqCYIcvzTZBJVgJzKsg>
-
-![春松客服质量管理](images/products/cc-qa-sys.jpg)
+用户使用文档（PDF）是与[文档中心](https://docs.cskefu.com/docs/)的内容一致的 PDF 文件。PDF 格式方便查看、搜索和打印。使用时注意版本更新，相对而言，[网站](https://docs.cskefu.com/docs/) 是最新的，注册春松客服官网：<https://www.cskefu.com/>，及时获得更新提醒。
 
 <!-- markup:markdown-end -->
 
@@ -125,4 +113,4 @@ sidebar_position: 1
 
 开发者通过学习《春松客服大讲堂》[^cskefudjt2019]来掌握基于春松客服定制开发客服系统，在春松客服基础上添加企业特别需求的功能。
 
-[^cskefudjt2019]: 地址，https://docs.chatopera.com/products/cskefu/osc/training.html
+[^cskefudjt2019]: 地址，https://docs.cskefu.com/docs/osc/training

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # 开发环境搭建
 
-本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](/products/cskefu/osc/training.html)**。
+本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](/docs/osc/training)**。
 
 ## 依赖
 
@@ -56,9 +56,9 @@ sidebar_position: 3
     </repositories>
 ```
 
-配置文件的示例见 [pom.xml](https://github.com/chatopera/cskefu/blob/osc/contact-center/app/pom.xml)。
+配置文件的示例见 [pom.xml](https://github.com/cskefu/cskefu/blob/osc/contact-center/app/pom.xml)。
 
-如配置后不能下载，请参考[配置文件](https://github.com/chatopera/cskefu/issues/137)。
+如配置后不能下载，请参考[配置文件](https://github.com/cskefu/cskefu/issues/137)。
 
 ## 克隆项目
 
@@ -74,7 +74,7 @@ sidebar_position: 3
 
 ### Fork 源码
 
-在浏览器中，打开[春松客服项目地址](https://github.com/chatopera/cskefu)，在右上角，找到【Fork】按钮，点击【Fork】，根据提示选择空间，该项目源码将被复制到该空间。
+在浏览器中，打开[春松客服项目地址](https://github.com/cskefu/cskefu)，在右上角，找到【Fork】按钮，点击【Fork】，根据提示选择空间，该项目源码将被复制到该空间。
 
 ![Fork 源码](../images/products/cskefu/screenshot-20220325-142302.png)
 
@@ -89,9 +89,9 @@ https://github.com/${YOUR_SPACE}/cskefu  # ${YOUR_SPACE} 代表您的空间名�
 克隆项目，就是将上面新建的项目的源码，下载到计算机，使用命令行终端执行：
 
 ```Bash
-git clone https://github.com/${YOUR_SPACE}/cskefu.git cskefu.osc
+git clone https://github.com/${YOUR_SPACE}/cskefu.git cskefu
 # 默认为 osc 分支，OSC 代表 OpenSource Community
-# 以下，使用 cskefu.osc 代表源码所在路径
+# 以下，使用 cskefu 代表源码所在路径
 ```
 
 ### 添加 Upstream
@@ -99,8 +99,8 @@ git clone https://github.com/${YOUR_SPACE}/cskefu.git cskefu.osc
 Upstream 指春松客服 OSC 分支，就是春松客服的项目库核心分支。添加 Upstream 的目的，是之后从春松客服项目拉取更新代码。
 
 ```Bash
-cd cskefu.osc
-git remote add upstream git@github.com:chatopera/cskefu.git
+cd cskefu
+git remote add upstream git@github.com:cskefu/cskefu.git
 ```
 
 完成以上步骤，克隆项目完毕。也请给春松客服点赞，使用【Fork】旁边的【Star】按钮。<!-- markup:skip-line -->
@@ -128,7 +128,7 @@ git remote add upstream git@github.com:chatopera/cskefu.git
 春松客服是基于 [Spring Boot Release 1.5.22.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.22.RELEASE) 开发，配置文件是
 
 ```路径
-cskefu.osc/contact-center/app/src/main/resources/application.properties
+cskefu/contact-center/app/src/main/resources/application.properties
 ```
 
 数据库（后文介绍搭建数据库）连接等其他信息，参考该文件。使用自定义值覆盖默认值，有以下两个方式：
@@ -192,18 +192,18 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 > 提示：在生产环境部署，建议使用环境变量方式配置。
 
-春松客服 Docker 容器的配置，使用了环境变量的方式，参考文件[docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml)。
+春松客服 Docker 容器的配置，使用了环境变量的方式，参考文件[docker-compose.yml](https://github.com/cskefu/cskefu/blob/osc/docker-compose.yml)。
 
 ## 数据库搭建
 
-在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml)，用于快速准备开发环境。
+在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/cskefu/cskefu/blob/osc/docker-compose.yml)，用于快速准备开发环境。
 
-为了减少开发环境搭建可能遇到的问题，使用 [docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
+为了减少开发环境搭建可能遇到的问题，使用 [docker-compose.yml](https://github.com/cskefu/cskefu/blob/osc/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
 
 这几个数据库，可以用一行命令启动：
 
 ```bash
-cd cskefu.osc
+cd cskefu
 docker-compose up -d mysql elasticsearch activemq redis
 ```
 
@@ -214,7 +214,7 @@ docker-compose up -d mysql elasticsearch activemq redis
 春松客服依赖 Elasticsearch 服务，用下面的方式创建。
 
 ```Bash
-cd cskefu.osc
+cd cskefu
 docker-compose up -d elasticsearch
 ```
 
@@ -234,7 +234,7 @@ Elasticsearch 的数据浏览和管理，使用 [elasticsearch-head](https://git
 春松客服依赖 ActiveMQ 服务，如果没有 ActiveMQ 服务，可以用下面的方式创建。
 
 ```Bash
-cd cskefu.osc
+cd cskefu
 docker-compose up -d activemq
 ```
 
@@ -250,7 +250,7 @@ spring.activemq.pool.max-connections=50
 
 将以上值修改为 ActiveMQ 的实际地址和密码。
 
-ActiveMQ 管理工具，使用浏览器打开，<http://YOUR_ACTIVEMQ_IP:PORT。PORT> 默认是 `8051`，即[环境变量](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml) `ACTIVEMQ_PORT1`。
+ActiveMQ 管理工具，使用浏览器打开，<http://YOUR_ACTIVEMQ_IP:PORT。PORT> 默认是 `8051`，即[环境变量](https://github.com/cskefu/cskefu/blob/osc/docker-compose.yml) `ACTIVEMQ_PORT1`。
 
 ![ActiveMQ 管理工具](../images/products/cskefu/screenshot-20220326-105115.png)
 
@@ -261,11 +261,11 @@ ActiveMQ 管理工具，使用浏览器打开，<http://YOUR_ACTIVEMQ_IP:PORT。
 春松客服依赖 MySQL 服务，如果没有 MySQL 服务，可以用下面的方式创建。
 
 ```Bash
-cd cskefu.osc
+cd cskefu
 docker-compose up -d mysql
 ```
 
-MySQL 容器启动后，还需要创建春松客服数据库，该过程是在数据库上执行 SQL 文件([`contact-center/config/sql/cosinee-MySQL-slim.sql`](https://github.com/chatopera/cskefu/blob/osc/contact-center/config/sql/cosinee-MySQL-slim.sql))完成的。
+MySQL 容器启动后，还需要创建春松客服数据库，该过程是在数据库上执行 SQL 文件([`contact-center/config/sql/cosinee-MySQL-slim.sql`](https://github.com/cskefu/cskefu/blob/osc/contact-center/config/sql/cosinee-MySQL-slim.sql))完成的。
 
 #### 连接 MySQL 服务
 
@@ -312,7 +312,7 @@ Redis 管理工具，推荐 [AnotherRedisDesktopManager for Windows](https://git
 
 春松客服的一些定制化需求是通过插件的形式发布的，插件让非通用需求和定制化开发的功能的源码与基础代码分离。一些插件是付费的，一些插件是免费的，比如**机器人客服插件**就是免费开源的。
 
-插件的安装和源码参考：[https://github.com/chatopera/cskefu/tree/osc/public/plugins](https://github.com/chatopera/cskefu/tree/osc/public/plugins)
+插件的安装和源码参考：[https://github.com/cskefu/cskefu/tree/osc/public/plugins](https://github.com/cskefu/cskefu/tree/osc/public/plugins)
 
 ## 配置 IDE
 
@@ -331,7 +331,7 @@ Redis 管理工具，推荐 [AnotherRedisDesktopManager for Windows](https://git
 
 为提升合作和可维护性，共同做好开源客服系统，修改春松客服代码，需要符合一定规范，这是对春松客服开源社区开发者的一致要求。
 
-配置好开发环境后，阅读[《春松客服代码规范》](https://github.com/chatopera/cskefu/blob/osc/CODE_OF_CONDUCT.md)。
+配置好开发环境后，阅读[《春松客服代码规范》](https://github.com/cskefu/cskefu/blob/osc/CODE_OF_CONDUCT.md)。
 
 ## 模拟访客端测试
 

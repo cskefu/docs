@@ -8,7 +8,7 @@ sidebar_position: 2
 
 重要提示：部署应用后，必须按照《系统初始化》[^initdoc]文档进行系统初始化，再使用，不做初始化，会造成坐席无法分配等问题。
 
-[^initdoc]: 系统初始化文档，https://docs.chatopera.com/products/cskefu/initialization.html
+[^initdoc]: 系统初始化文档，https://docs.cskefu.com/docs/initialization/
 
 ## 准备条件
 
@@ -33,7 +33,7 @@ sidebar_position: 2
 ## 克隆代码
 
 ```Bash
-git clone https://github.com/chatopera/cskefu.git cskefu
+git clone https://github.com/cskefu/cskefu.git cskefu
 cd cskefu
 cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求需改配置
 ```
@@ -136,7 +136,7 @@ docker pull IMAGE_NAME
 
 IMAGE_NAME 参考 docker-compose.yml 中各服务的image，
 比如：
-`docker pull chatopera/contact-center:develop`
+`docker pull cskefu/contact-center:develop`
 
 春松客服包含多个image。
 
@@ -145,7 +145,7 @@ IMAGE_NAME 参考 docker-compose.yml 中各服务的image，
 下载好image后，导出image，将所有image使用下面命令导出为 tgz 文件
 
 ```
-docker save chatopera/contact-center:develop > cc.docker.tgz
+docker save cskefu/contact-center:develop > cc.docker.tgz
 ```
 
 ### 上传镜像
@@ -173,8 +173,8 @@ docker-compose up -d contact-center
 
 ## 下一步
 
-- [系统初始化：建立组织机构、账号、坐席和角色等](initialization.html)
+- [系统初始化：建立组织机构、账号、坐席和角色等](/docs/initialization)
 
-- [系统维护：备份、升级和恢复回退等](osc/maintainence.html)
+- [系统维护：备份、升级和恢复回退等](/docs/osc/maintainence)
 
 - [春松客服配置 CDN 和 HTTPS | 春松客服](https://chatopera.blog.csdn.net/article/details/105820829)

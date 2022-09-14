@@ -85,8 +85,16 @@ const config = {
             title: '文档',
             items: [
               {
-                label: '快速上手',
-                to: '/docs/index',
+                label: '应用部署',
+                to: '/docs/deploy/',
+              },
+              {
+                label: '开发环境搭建',
+                to: '/docs/osc/engineering',
+              },
+              {
+                label: '提交代码',
+                to: '/docs/osc/contribution',
               },
             ],
           },
@@ -94,8 +102,16 @@ const config = {
             title: '社区',
             items: [
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: '组织原则',
+                href: 'https://www.cskefu.com/community-constitution/',
+              },
+              {
+                label: '关于我们',
+                href: 'https://www.cskefu.com/about/',
+              },
+              {
+                label: '加入我们',
+                href: 'https://www.cskefu.com/join-us/',
               },
             ],
           },
@@ -103,12 +119,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: '博客',
-                to: '/blog',
+                label: '邮件列表',
+                to: 'https://lists.cskefu.com/cgi-bin/mailman/listinfo/dev',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/cskefu/cskefu-docs',
+                label: 'Rss',
+                href: 'https://www.cskefu.com/feed/',
               },
             ],
           },

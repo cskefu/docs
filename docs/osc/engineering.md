@@ -90,13 +90,13 @@ https://github.com/${YOUR_SPACE}/cskefu  # ${YOUR_SPACE} 代表您的空间名�
 
 ```Bash
 git clone https://github.com/${YOUR_SPACE}/cskefu.git cskefu
-# 默认为 osc 分支，OSC 代表 OpenSource Community
+# 默认为 develop 分支, develop 分支为当前发行版本的维护分支；master 分支为发行版本的稳定分支；next 为下一个版本的研发分支
 # 以下，使用 cskefu 代表源码所在路径
 ```
 
 ### 添加 Upstream
 
-Upstream 指春松客服 OSC 分支，就是春松客服的项目库核心分支。添加 Upstream 的目的，是之后从春松客服项目拉取更新代码。
+Upstream 指春松客服 GitHub Repo（https://github.com/cskefu/cskefu），就是春松客服的项目库核心分支。添加 Upstream 的目的，是之后从春松客服项目拉取更新代码。
 
 ```Bash
 cd cskefu
@@ -119,6 +119,7 @@ git remote add upstream git@github.com:cskefu/cskefu.git
 | `config` | 数据库文件                   |
 | `data`   | 数据库数据                   |
 | `logs`   | 日志                         |
+
 <!-- markup:table-caption 文件目录说明 -->
 
 春松客服是基于 Java 开发到，使用 Maven 维护项目声明周期。使用 Maven 命令，生成项目，方便导入到 IDE 中。
@@ -282,6 +283,7 @@ MySQL 容器启动后，还需要创建春松客服数据库，该过程是在�
 | IP        | 用户名 | 密码   | 端口 |
 | --------- | ------ | ------ | ---- |
 | localhost | root   | 123456 | 8037 |
+
 <!-- markup:table-caption MySQL Workbench 配置 -->
 
 ![MySQL Workbench 安装](../images/products/cskefu/screenshot-20220326-103030.png)

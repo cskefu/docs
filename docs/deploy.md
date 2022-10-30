@@ -33,12 +33,19 @@ sidebar_position: 2
 ## 克隆代码
 
 ```Bash
-git clone https://github.com/cskefu/cskefu.git cskefu
+git clone -b master https://github.com/cskefu/cskefu.git cskefu
 cd cskefu
 cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求需改配置
 ```
 
-> osc 为 OpenSource Community 缩写，代表春松客服开源版本分支。
+以上命令中，`master` 代表当前稳定版，是 [cskefu/cskefu](https://github.com/cskefu/cskefu) 的 master 分支，分支说明。
+
+| 分支 | 说明 |
+| --- | --- |
+| master | 当前稳定版本 |
+| develop | 当前开发版本 |
+
+克隆代码时，按照需要指定分支信息；本部署文档针对 master 分支。
 
 ## 配置项
 

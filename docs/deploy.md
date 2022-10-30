@@ -24,6 +24,7 @@ sidebar_position: 2
 | 内存                | 开发测试 >= 8GB \| 生产环境 >= 16GB                           |
 | CPU 颗数            | 开发测试 >= 2 \| 生产环境 >= 4                                |
 | 硬盘                | >= 20GB                                                       |
+
 <!-- markup:table-caption 部署依赖资源的最低配置 -->
 
 ### 安全组
@@ -66,17 +67,19 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 | ACTIVEMQ_PORT2       | 8053               | ActiveMQ 端口                                  |
 | DB_PASSWD            | 123456             | 数据库密码，设置到 MySQL, Redis, ActiveMQ      |
 | LOG_LEVEL            | INFO               | 日志级别，可使用 WARN, ERROR, INFO, DEBUG      |
+
 <!-- markup:table-caption 配置环境变量项目 -->
 
 以上配置中，**端口的各默认值需要保证在宿主机器上还没有被占用；数据库的密码尽量复杂；CC_WEB_PORT 和 CC_SOCKET_PORT 这两个值尽量不要变更；生产环境下 LOG_LEVEL 使用至少 WARN 的级别**。
 
 以下为一些业务功能相关配置的环境变量：
 
-| KEY                  | 默认值      | 说明                                                                                                   |
-| -------------------- | ----------- | ------------------------------------------------------------------------------------------------------ |
-| TONGJI_BAIDU_SITEKEY | placeholder | 使用[百度统计](https://tongji.baidu.com/web/welcome/login) 记录和查看页面访问情况，默认不记录          |
-| EXTRAS_LOGIN_BANNER  | off         | 登录页上方展示通知的内容，默认(off)不展示                                                              |
+| KEY                  | 默认值      | 说明                                                                                                     |
+| -------------------- | ----------- | -------------------------------------------------------------------------------------------------------- |
+| TONGJI_BAIDU_SITEKEY | placeholder | 使用[百度统计](https://tongji.baidu.com/web/welcome/login) 记录和查看页面访问情况，默认不记录            |
+| EXTRAS_LOGIN_BANNER  | off         | 登录页上方展示通知的内容，默认(off)不展示                                                                |
 | EXTRAS_LOGIN_CHATBOX | off         | 登录页支持加入一个春松客服网页渠道聊天按钮，比如 <https://oh-my.cskefu.com/im/xxx.html，默认(off>)不展示 |
+
 <!-- markup:table-caption 业务相关环境变量 -->
 
 ## 管理命令
@@ -141,15 +144,15 @@ docker-compose restart
 docker pull IMAGE_NAME
 ```
 
-IMAGE_NAME 参考 docker-compose.yml 中各服务的image，
+IMAGE_NAME 参考 docker-compose.yml 中各服务的 image，
 比如：
 `docker pull cskefu/contact-center:develop`
 
-春松客服包含多个image。
+春松客服包含多个 image。
 
 ### 导出镜像
 
-下载好image后，导出image，将所有image使用下面命令导出为 tgz 文件
+下载好 image 后，导出 image，将所有 image 使用下面命令导出为 tgz 文件
 
 ```
 docker save cskefu/contact-center:develop > cc.docker.tgz
@@ -157,12 +160,12 @@ docker save cskefu/contact-center:develop > cc.docker.tgz
 
 ### 上传镜像
 
-将所有导出的image tgz文件上传到目标部署的服务器
-即网络条件不好的机器，比如用 FTP工具或SCP命令。
+将所有导出的 image tgz 文件上传到目标部署的服务器
+即网络条件不好的机器，比如用 FTP 工具或 SCP 命令。
 
 ### 安装镜像
 
- 上传到目标机器后，安装镜像
+上传到目标机器后，安装镜像
 `docker load < cc.docker.tgz`
 
 安装成功后，会提示。

@@ -69,6 +69,11 @@ const config = {
             position: 'left',
             label: '文档中心',
           },
+          {
+            to: 'blog',
+            position: 'left',
+            label: '博客',
+          },
           {to: 'https://github.com/cskefu/cskefu', label: '源码仓库', position: 'left'},
           {to: 'https://www.cskefu.com/', label: '官网', position: 'left'},
           {
@@ -129,7 +134,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 春松客服, Inc. 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建`,
+        copyright: `Copyright © ${new Date().getFullYear()} 春松客服，Inc. 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建`,
       },
       prism: {
         theme: lightCodeTheme,

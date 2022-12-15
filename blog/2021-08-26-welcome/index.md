@@ -2,7 +2,7 @@
 slug: welcome
 title: 春松客服开源社区成立
 authors: [samzong,hailiang-wang]
-tags: [cskefu, docusaurus]
+tags: [cskefu, team]
 ---
 
 春松客服开源社区成立，向闭源客服系统宣战，开源优于闭源！
@@ -17,12 +17,12 @@ tags: [cskefu, docusaurus]
 
 <img src='http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1280X1280.PNG?x-oss-process=image/resize,w_960,m_lfit' alt='resize,w_960,m_lfit'/>
 
-
 在春松客服开源社区启动之日，从开源社区遴选出 9 位社区领导者，设立春松客服道德委员会、春松客服技术委员会和春松客服开发者群。
 
 <img src='http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1280X1280%20(1).PNG?x-oss-process=image/resize,w_960,m_lfit' alt='resize,w_960,m_lfit'/>
 
 首先由两位道德委员会成员发言。春松客服道德委员会监督、制约和仲裁技术委员会。他们分享了为什么参与社区建设，在春松客服开源社区使用什么原则，什么方式沟通。邀请春松客服道德委员成员是社区建立最有挑战的事情，因为担当该角色需要：
+
 - 不与春松客服有利益关系；
 - 善于解决矛盾，能帮助大家理性思考；
 - 具有“温良恭俭让”的美德。

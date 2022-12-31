@@ -77,6 +77,10 @@ const config = {
           {to: 'https://github.com/cskefu/cskefu', label: '源码仓库', position: 'left'},
           {to: 'https://www.cskefu.com/', label: '官网', position: 'left'},
           {
+            type: "docsVersionDropdown",
+            position: "right",
+          },
+          {
             href: 'https://github.com/cskefu/cskefu-docs',
             label: 'GitHub',
             position: 'right',

@@ -2,13 +2,14 @@
 sidebar_position: 1
 ---
 
-# 产品概述
+# 春松客服 v8
 
 [https://www.cskefu.com](https://www.cskefu.com)
 
 春松客服是拥有坐席管理、渠道管理、机器人客服、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。
 
-![用户案例](images/products/cskefu/customers-2021.jpg)
+春松客服 v8 为开发中的大版本，在 2023 年正式发行。
+目前，春松客服发行的稳定版本为 v7，进入[春松客服 v7 文档](/docs/)。
 
 ## 产品定义
 
@@ -33,43 +34,6 @@ sidebar_position: 1
 强大的机器人客服解决方案，与 Chatopera 机器人平台等产品集成。
 
 ![全周期解决方案](images/products/solution-1.png)
-
-### 开箱即用
-
-春松客服提供多个**开箱即用**的模块：
-
-- 账号及组织机构管理：按组织、角色分配账号权限
-
-- 坐席监控：设置坐席监控角色的人员可以看到并干预访客会话
-
-- 联系人和客户管理：CRM 模块，管理联系人和客户，细粒度维护客户信息，自定义标签和打标签，记录来往历史等
-
-- 网页渠道组件：一分钟接入对话窗口，支持技能组、邀请和关联联系人等
-
-- Facebook 渠道组件：快速接入 [Facebook Messenger](https://www.messenger.com/) 渠道，通过 Messenger 支持 Facebook 粉丝页、[Shopify](https://www.shopify.com/) 等海外社交、电商平台
-
-- 坐席工作台：汇聚多渠道访客请求，坐席根据策略自动分配，自动弹屏，转接等
-
-- 机器人客服：与[Chatopera 云服务](/products/chatbot-platform/index.html)集成
-
-- 企业聊天：支持企业员工在春松客服系统中群聊和私聊
-
-- 质检：历史会话、服务小结、服务反馈及相关报表
-
-在本文档中，也称以上模块为*基础模块*。
-
-## 产品演示
-
-演示环境是为了帮助大家了解春松客服，以下是地址和超级管理员账号。
-
-| 网站                        | 用户名 | 密码      |
-| --------------------------- | ------ | --------- |
-| <https://demo.cskefu.com/> | admin  | admin1234 |
-<!-- markup:table-caption 演示环境信息 -->
-
-提示：【演示环境】定时刷新且任何人都可以登录，不要更改密码和创建敏感数据，因该网站会**频繁重置数据和升级**，**该网站不能作为生产系统评估**，仅作为应用可行性参考；评估系统，比如压力测试和性能测试，请按照部署文档[^deploy]操作获得新的服务实例。
-
-[^deploy]: 部署文档 <https://docs.cskefu.com/docs/deploy>
 
 ## 使用场景角色
 
@@ -99,18 +63,3 @@ sidebar_position: 1
 
 ![春松客服公众号](images/products/cskefu/cskefu-wechat-gzh.png)
 
-## 用户使用文档 PDF
-
-春松客服用户使用指南（PDF） 2022 最新版本[下载链接](https://www.cskefu.com/moment/825.html/)。
-
-<https://www.cskefu.com/moment/825.html/>
-
-用户使用文档（PDF）是与[文档中心](https://docs.cskefu.com/docs/)的内容一致的 PDF 文件。PDF 格式方便查看、搜索和打印。使用时注意版本更新，相对而言，[网站](https://docs.cskefu.com/docs/) 是最新的，注册春松客服官网：<https://www.cskefu.com/>，及时获得更新提醒。
-
-<!-- markup:markdown-end -->
-
-## 定制化开发培训课程
-
-开发者通过学习《春松客服大讲堂》[^cskefudjt2019]来掌握基于春松客服定制开发客服系统，在春松客服基础上添加企业特别需求的功能。
-
-[^cskefudjt2019]: 地址，https://docs.cskefu.com/docs/osc/training

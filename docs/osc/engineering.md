@@ -105,6 +105,76 @@ git remote add upstream git@github.com:cskefu/cskefu.git
 
 完成以上步骤，克隆项目完毕。也请给春松客服点赞，使用【Fork】旁边的【Star】按钮。<!-- markup:skip-line -->
 
-![给春松客服点赞](../images/products/cosin/g4.jpg] <!-- markup:skip-line -->
+![给春松客服点赞](../images/products/cosin/g4.jpg) <!-- markup:skip-line -->
 
-TODO
+## 目录结构说明
+
+春松客服采用前后端分离架构，源码的目录结构说明如下：
+
+
+```
+.
+├── compose                       # 使用 Docker Compose 启动目录
+│   ├── databases
+│   │   ├── mysql
+│   │   └── redis
+│   ├── docker-compose.yml
+│   └── README.md
+├── README.md
+├── server                        # 服务器端 Server 程序
+│   ├── serving-foo               # serving 前缀的是 Application
+│   │   ├── src
+│   │   ├── bin
+│   │   ├── config
+│   │   ├── data
+│   │   ├── Dockerfile
+│   │   ├── logs
+│   │   ├── pom.xml
+│   │   └── README.md
+│   ├── mod-bar                   # mod 前缀的是模块、Lib
+│   │   ├── src
+│   │   ├── bin
+│   │   ├── config
+│   │   ├── data
+│   │   ├── pom.xml
+│   │   ├── logs
+│   │   └── README.md
+│   ├── mod-biz
+│   └── 服务端项目根目录
+└── web                           # 前端服务程序
+    └── web前端项目根目录
+```
+
+### server
+backend modules and apps.
+
+* module - sub module as a maven project.
+* serving - an application such as spring boot app.
+
+For each module and app, following a folder structure -
+
+```
+pom.xml # for a maven project
+src/ # source codes
+config / # config file sample
+data/ # data used by this app
+logs/ # logs dir
+bin/ # scripts or binary generated with this app
+    start.sh # start this app 
+    compile.sh # compile the source code to binary
+    package.sh # package up the file
+    dev.sh # start the app in development mode
+    build.sh # build the app as a docker image
+    run.sh # run the app with docker image
+    push.sh # push the docker image into docker registry
+  
+Dockerfile # Docker file to build this app as a docker image
+```
+
+### web
+
+frontend services for web clients. 
+
+### compose
+
+YML and data dirs to run with docker-compose.

@@ -1,6 +1,6 @@
 <div align=right>
 
-[春松客服开源社区](https://www.cskefu.com/)　|　[开源许可协议](https://www.cskefu.com/2022/06/24/cskefu-opensource-license/)　|　[邮件列表](https://lists.cskefu.com/cgi-bin/mailman/listinfo/dev)
+[官网](https://www.cskefu.com/)　|　[开源许可协议](https://www.cskefu.com/2022/06/24/cskefu-opensource-license/)　|　[邮件列表](https://lists.cskefu.com/cgi-bin/mailman/listinfo/dev)
 
 </div>
 
@@ -14,8 +14,12 @@
 
 [https://github.com/cskefu/cskefu-docs](https://github.com/cskefu/cskefu-docs)
 
+
+文档中心 Issues：
+
+[https://github.com/cskefu/cskefu/issues?q=label%3Adocument+sort%3Aupdated-desc](https://github.com/cskefu/cskefu/issues?q=label%3Adocument+sort%3Aupdated-desc)
+
+
 ## 开源许可协议
 
 [Apache License Version 2.0](https://www.cskefu.com/2022/06/24/cskefu-opensource-license/)
-
-![img](https://github.com/cskefu/cskefu/blob/osc/public/assets/screenshot-20220323-163051.jpg)

@@ -16,7 +16,7 @@ sidebar_position: 2
 
 | 项目                | 说明                                                          |
 | ------------------- | ------------------------------------------------------------- |
-| 操作系统            | **Ubuntu 16.04+**；鉴于本文部署方案基于 Docker 和 Docker Compose，其它操作系统如 CentOS 7.x 理论上也兼容 |
+| 操作系统            | **Ubuntu 16.04+**；鉴于下述部署方案基于 Docker 和 Docker Compose，其它操作系统如 CentOS 7.x 理论上也兼容 |
 | Docker 版本         | Docker version 1.13.x 及以上                                  |
 | Docker Compose 版本 | version 1.23.x 及以上                                         |
 | 防火墙端口          | 8035, 8036                                                    |

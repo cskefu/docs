@@ -13,16 +13,16 @@ const FeatureList = [
     ),
   },
   {
-    title: '部署方便',
+    title: '安装简单',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        春松客服适应各种部署方式，支持 Docker 和 Docker compose 的方式，适合体验、开发、测试和上线春松客服，此种方式简单快捷。
+        春松客服适应各种部署方式，支持云原生一键部署，提供 Docker 和 Docker compose 作为默认安装方案，适合体验、开发、测试和上线春松客服。
       </>
     ),
   },
   {
-    title: '源自开源',
+    title: '开源软件',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>

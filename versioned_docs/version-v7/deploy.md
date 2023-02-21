@@ -187,4 +187,4 @@ docker-compose up -d contact-center
 
 - [系统维护：备份、升级和恢复回退等](/docs/osc/maintainence)
 
-- [春松客服配置 CDN 和 HTTPS | 春松客服](https://chatopera.blog.csdn.net/article/details/105820829)
+- [春松客服配置 CDN 和 HTTPS | 春松客服](https://github.com/cskefu/cskefu/issues/414#issuecomment-1437767407)

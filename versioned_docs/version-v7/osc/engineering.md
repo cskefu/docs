@@ -199,9 +199,9 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 ## 数据库搭建
 
-在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/cskefu/cskefu/blob/osc/docker-compose.yml)，用于快速准备开发环境。
+在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/cskefu/cskefu/blob/develop/docker-compose.yml)，用于快速准备开发环境。
 
-为了减少开发环境搭建可能遇到的问题，使用 [docker-compose.yml](https://github.com/cskefu/cskefu/blob/osc/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
+为了减少开发环境搭建可能遇到的问题，使用 [docker-compose.yml](https://github.com/cskefu/cskefu/blob/develop/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
 
 这几个数据库，可以用一行命令启动：
 

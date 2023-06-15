@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # 开发环境搭建
 
-本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](/docs/osc/training)**。
+本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](https://docs.cskefu.com/docs/osc/training)**。
+
+本文档针对春松客服 v8 版本，该版本对应的代码参考[链接](#克隆项目)。
 
 ## 依赖
 
@@ -89,9 +91,9 @@ https://github.com/${YOUR_SPACE}/cskefu  # ${YOUR_SPACE} 代表您的空间名�
 克隆项目，就是将上面新建的项目的源码，下载到计算机，使用命令行终端执行：
 
 ```Bash
-git clone -b develop https://github.com/${YOUR_SPACE}/cskefu.git cskefu.develop
-# 默认为 develop 分支, develop 分支为当前开发中的大版本；master 分支为发行版本的稳定分支
-# 以下，使用 CSKEFU_ROOT 代表源码所在路径
+git clone https://github.com/${YOUR_SPACE}/cskefu.git cskefu
+# 默认为 develop 分支, develop 分支为当前发行版本的维护分支
+# 以下，使用 cskefu 代表源码所在路径
 ```
 
 ### 添加 Upstream
@@ -99,82 +101,298 @@ git clone -b develop https://github.com/${YOUR_SPACE}/cskefu.git cskefu.develop
 Upstream 指春松客服 GitHub Repo（https://github.com/cskefu/cskefu），就是春松客服的项目库核心分支。添加 Upstream 的目的，是之后从春松客服项目拉取更新代码。
 
 ```Bash
-cd $CSKEFU_ROOT
+cd cskefu
 git remote add upstream git@github.com:cskefu/cskefu.git
 ```
 
 完成以上步骤，克隆项目完毕。也请给春松客服点赞，使用【Fork】旁边的【Star】按钮。<!-- markup:skip-line -->
 
-![给春松客服点赞](../images/products/cosin/g4.jpg) <!-- markup:skip-line -->
+![给春松客服点赞](../images/products/cosin/g4.jpg] <!-- markup:skip-line -->
 
-## 目录结构说明
+## 文件目录介绍
 
-春松客服采用前后端分离架构，源码的目录结构说明如下：
+![文件目录介绍](../images/products/cosin/g9.png)
 
+| 目录     | 说明                         |
+| -------- | ---------------------------- |
+| `_m2`    | 用于 Dockerfile 中，构建镜像 |
+| `admin`  | 各种脚本                     |
+| `app`    | 源代码                       |
+| `config` | 数据库文件                   |
+| `data`   | 数据库数据                   |
+| `logs`   | 日志                         |
 
-```
-.
-├── compose                       # 使用 Docker Compose 启动目录
-│   ├── databases
-│   │   ├── mysql
-│   │   └── redis
-│   ├── docker-compose.yml
-│   └── README.md
-├── README.md
-├── server                        # 服务器端 Server 程序
-│   ├── serving-foo               # serving 前缀的是 Application
-│   │   ├── src
-│   │   ├── bin
-│   │   ├── config
-│   │   ├── data
-│   │   ├── Dockerfile
-│   │   ├── logs
-│   │   ├── pom.xml
-│   │   └── README.md
-│   ├── mod-bar                   # mod 前缀的是模块、Lib
-│   │   ├── src
-│   │   ├── bin
-│   │   ├── config
-│   │   ├── data
-│   │   ├── pom.xml
-│   │   ├── logs
-│   │   └── README.md
-│   ├── mod-biz
-│   └── 服务端项目根目录
-└── web                           # 前端服务程序
-    └── web前端项目根目录
+<!-- markup:table-caption 文件目录说明 -->
+
+春松客服是基于 Java 开发到，使用 Maven 维护项目声明周期。使用 Maven 命令，生成项目，方便导入到 IDE 中。
+
+## 配置启动参数
+
+春松客服是基于 [Spring Boot Release 1.5.22.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.22.RELEASE) 开发，配置文件是
+
+```路径
+cskefu/contact-center/app/src/main/resources/application.properties
 ```
 
-### server
-backend modules and apps.
+数据库（后文介绍搭建数据库）连接等其他信息，参考该文件。使用自定义值覆盖默认值，有以下两个方式：
 
-* module - sub module as a maven project.
-* serving - an application such as spring boot app.
+1）使用 application-dev.properties；
 
-For each module and app, following a folder structure -
+2）使用环境变量。
 
-```
-pom.xml # for a maven project
-src/ # source codes
-config / # config file sample
-data/ # data used by this app
-logs/ # logs dir
-bin/ # scripts or binary generated with this app
-    start.sh # start this app 
-    compile.sh # compile the source code to binary
-    package.sh # package up the file
-    dev.sh # start the app in development mode
-    build.sh # build the app as a docker image
-    run.sh # run the app with docker image
-    push.sh # push the docker image into docker registry
-  
-Dockerfile # Docker file to build this app as a docker image
+### 使用 Profile 文件
+
+使用 application-dev.properties 覆盖默认配置。
+
+- 设置环境变量
+
+```环境变量
+SPRING_PROFILES_ACTIVE=dev
 ```
 
-### web
+- 创建 application-dev.properties
 
-frontend services for web clients. 
+```Bash
+touch contact-center/app/src/main/resources/application-dev.properties
+```
 
-### compose
+内容如下：
 
-YML and data dirs to run with docker-compose.
+```文本
+# MySQL
+spring.datasource.url=jdbc:mysql://192.168.2.217:7111/cosinee?useUnicode=true&characterEncoding=UTF-8
+spring.datasource.username=root
+spring.datasource.password=123456
+
+# Redis服务器连接端口
+spring.redis.host=localhost
+spring.redis.port=6379
+# Redis服务器连接密码（默认为空）
+spring.redis.password=
+
+# ActiveMQ
+spring.activemq.broker-url=tcp://192.168.2.217:9007
+spring.activemq.user=admin
+spring.activemq.password=123456
+```
+
+**此处可以覆盖 application.properties 中的任何值。**
+
+### 环境变量
+
+`application.properties` 中的每一项都可以用环境变量配置，通过环境变量方式映射配置信息，实现覆盖 `application.properties` 中等配置，其映射方式为 `propery` 的键转为大写同时`.`和`-`转为`_`。部分环境变量：
+
+```环境变量
+SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/contactcenter?useUnicode=true&characterEncoding=UTF-8
+SPRING_DATASOURCE_USERNAME=root
+SPRING_DATASOURCE_PASSWORD=123456
+```
+
+比如，`SPRING_DATASOURCE_URL` 就是对应了 `properties` 文件中的 `spring.datasource.url`。同时，环境变量的值优先级高于 `properties` 文件。
+
+> 提示：在生产环境部署，建议使用环境变量方式配置。
+
+春松客服 Docker 容器的配置，使用了环境变量的方式，参考文件[docker-compose.yml](https://github.com/cskefu/cskefu/blob/develop/docker-compose.yml)。
+
+## 数据库搭建
+
+在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/cskefu/cskefu/blob/develop/docker-compose.yml)，用于快速准备开发环境。
+
+为了减少开发环境搭建可能遇到的问题，使用 [docker-compose.yml](https://github.com/cskefu/cskefu/blob/develop/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
+
+这几个数据库，可以用一行命令启动：
+
+```bash
+cd cskefu
+docker-compose up -d mysql activemq redis
+```
+
+另外，以下几个数据库服务可以运行在不同的计算机，以节省开发机器的资源；如果使用了不同的计算机运行。以下也给出如何逐个启动，如何修改配置文件。
+
+### ActiveMQ
+
+春松客服依赖 ActiveMQ 服务，如果没有 ActiveMQ 服务，可以用下面的方式创建。
+
+```Bash
+cd cskefu
+docker-compose up -d activemq
+```
+
+ActiveMQ 的配置项在 application.properties 是
+
+```文本
+spring.activemq.broker-url=tcp://localhost:61616
+spring.activemq.user=admin
+spring.activemq.password=admin
+spring.activemq.pool.enabled=true
+spring.activemq.pool.max-connections=50
+```
+
+将以上值修改为 ActiveMQ 的实际地址和密码。
+
+ActiveMQ 管理工具，使用浏览器打开，<http://YOUR_ACTIVEMQ_IP:PORT。PORT> 默认是 `8051`，即[环境变量](https://github.com/cskefu/cskefu/blob/osc/docker-compose.yml) `ACTIVEMQ_PORT1`。
+
+![ActiveMQ 管理工具](../images/products/cskefu/screenshot-20220326-105115.png)
+
+点击【Manage ActiveMQ broker】,用户名 admin, 密码 admin。
+
+### MySQL
+
+春松客服依赖 MySQL 服务，如果没有 MySQL 服务，可以用下面的方式创建。
+
+```Bash
+cd cskefu
+docker-compose up -d mysql
+```
+
+MySQL 容器启动后，还需要创建春松客服数据库，该过程是在数据库上执行 SQL 文件，执行该过程，是通过数据库客户端连接后执行 SQL 文件。
+
+#### 数据库客户端连接 MySQL 服务
+
+安装 DBMS 管理工具 MySQL Workbench，下载地址：
+
+<https://dev.mysql.com/downloads/workbench/>
+
+![MySQL Workbench 下载](../images/products/cskefu/screenshot-20220326-103030.png)
+
+在 Windows 上，MySQL Workbench 依赖 [Visual C++ Redistributable](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)，需要提前安装。
+
+使用`docker-compose`启动的 MySQL 服务，其连接认证信息如下：
+
+| IP        | 用户名 | 密码   | 端口 |
+| --------- | ------ | ------ | ---- |
+| localhost | root   | 123456 | 8037 |
+<!-- markup:table-caption MySQL Workbench 配置 -->
+
+![MySQL Workbench 安装](../images/products/cskefu/screenshot-20220326-103030.png)
+
+#### 执行 SQL 文件
+
+SQL 文件[^sql-getstart]包括两个部分：
+
+1）创建数据库 `cosinee`：[001.mysql-create-db.sql](https://github.com/cskefu/cskefu/blob/develop/contact-center/config/sql/001.mysql-create-db.sql)
+
+2）在上一步的数据库 `cosinee` 中，创建表及数据：[002.mysql-create-schemas.sql](https://github.com/cskefu/cskefu/blob/develop/contact-center/config/sql/002.mysql-create-schemas.sql)
+
+成功运行上述文件后，就完成了初始化。
+
+### Redis
+
+春松客服依赖 Redis 服务，如果没有 Redis 服务，可以用下面的方式创建。
+
+```Bash
+docker-compose up -d redis
+```
+
+Redis 启动后就可以，不需要其他操作。
+
+Redis 管理工具，推荐 [AnotherRedisDesktopManager for Windows](https://github.com/qishibo/AnotherRedisDesktopManager/releases), [medis for macOS](https://github.com/luin/medis/releases)。
+
+## 安装春松客服插件
+
+春松客服的一些定制化需求是通过插件的形式发布的，插件让非通用需求和定制化开发的功能的源码与基础代码分离。一些插件是付费的，一些插件是免费的，比如**机器人客服插件**就是免费开源的。
+
+插件的安装和源码参考：[https://github.com/cskefu/cskefu/tree/develop/public/plugins](https://github.com/cskefu/cskefu/tree/develop/public/plugins)
+
+## 配置 IDE
+
+春松客服开发支持的 IDE，包括所有的支持 Spring Boot 的 IDE，以下仅提供部分工具的文档。
+
+- [Intelij IDEA](./ide_intelij_idea.md)
+- [Eclipse IDE](./ide_eclipse.md)
+
+配置完成后，需要继续完成以下内容。
+
+## 初始化系统
+
+启动调试服务，如果要定制化客服接待访客的代码，需要按照[系统初始化](/products/cskefu/initialization.html)文档做更多配置。
+
+## 春松客服代码规范
+
+为提升合作和可维护性，共同做好开源客服系统，修改春松客服代码，需要符合一定规范，这是对春松客服开源社区开发者的一致要求。
+
+配置好开发环境后，阅读[《春松客服代码规范》](https://github.com/cskefu/cskefu/blob/develop/CODE_OF_CONDUCT.md)。
+
+## 模拟访客端测试
+
+介绍如何测试网页端访客程序，假设服务是自动在本地 `http://localhost:8035` 端口。
+
+### 创建网站渠道
+
+```文本
+http://localhost:8035/
+用户名：admin
+密码：admin1234
+```
+
+保证有下面的一条网站渠道：
+
+![网站渠道](../images/products/cosin/g19.png)
+
+**注意**：网站地址为 _localhost_
+
+### 设计网页端样式
+
+在网站列表中，从右侧操作中点击“设计”。
+
+![设计网页](../images/products/cosin/g20.png)
+
+按照需求配置各种属性。
+
+![配置](../images/products/cosin/g21.png)
+
+### 访问测试程序
+
+浏览器打开
+
+```URL
+http://localhost:8035/testclient.html
+```
+
+![测试](../images/products/cosin/g22.png)
+
+### 网站留言
+
+如果当前系统中没有"在线"并且"就绪"的客服人员，则进入留言。
+
+### 嵌入代码到网站中
+
+在目标接入访客聊天控件的网站中，网页 HTML 的 header 中加入一行代码，就可以访问了，代码：
+
+```HTML
+<script defer="true" src="http://春松客服地址[:端口]/im/网站渠道标识.html"></script>
+```
+
+**注意**：如果使用 80 或 443 端口，可省略端口；请将网页放在 HTTP 服务器上，如果从浏览器中以本地文件打开因为安全限制会无法加载聊天控件。
+
+HTML 示例：
+
+```HTML
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <!-- META -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script defer="true" src="http://cc.chatopera.com/im/104eac.html"></script>
+</head>
+<body>
+春松客服演示客户端
+
+</body>
+</html>
+```
+
+<!-- markup:markdown-end -->
+
+## 接下来
+
+- [如何为开源客服系统春松客服贡献代码 | 春松客服](./contribution.md)
+
+- [春松客服数据库表及管理 | 春松客服](https://blog.csdn.net/samurais/article/details/105807088)
+
+- [春松客服的压力测试 | 春松客服](https://blog.csdn.net/samurais/article/details/105725876)
+
+
+[^sql-getstart]: SQL 快速入门，参考《春松客服大讲堂》之[春松客服开发基础知识 SQL 快速入门](https://www.bilibili.com/video/BV1ah411s7ak?p=1)。

@@ -106,3 +106,4 @@ dist
 # remove cache files
 .docusaurus
 build/
+.obsidian/workspace.json

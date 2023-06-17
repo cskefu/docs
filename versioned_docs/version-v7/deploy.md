@@ -24,7 +24,6 @@ sidebar_position: 2
 | 内存                | 开发测试 >= 8GB \| 生产环境 >= 16GB                           |
 | CPU 颗数            | 开发测试 >= 2 \| 生产环境 >= 4                                |
 | 硬盘                | >= 20GB                                                       |
-
 <!-- markup:table-caption 部署依赖资源的最低配置 -->
 
 ### 安全组

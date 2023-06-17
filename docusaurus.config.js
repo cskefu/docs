@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '春松客服',
-  tagline: '上线开源客服系统',
+  tagline: '迭代客服系统助力企业持续成长',
   url: 'https://docs.cskefu.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',

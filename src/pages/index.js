@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="http://hdxu.cn/6WMz8">
-            新版本 v8 发布会，腾讯会议，2023-07-01
+            参加 v8 新版本发布会，腾讯会议，2023-07-01
           </Link>
         </div>
       </div>

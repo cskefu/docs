@@ -48,7 +48,7 @@ Docker 或 Docker compose 可以安装到 Linux/Windows/Mac 上，Docker 在开�
 
 ## 配置 Maven
 
-确保在 pom.xml 中存在如下的 maven 残酷配置。
+确保在 pom.xml 中存在如下的 maven 仓库配置。
 
 > [Chatopera Nexus](https://nexus.chatopera.com/)是代理 Maven Central，Alibaba Maven Repo 等节点的混合 Maven Repository，使用 Chatopera Nexus 不会影响项目使用其它公共包（Artifacts）
 

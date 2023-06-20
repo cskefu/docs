@@ -20,6 +20,7 @@ sidebar_position: 3
 - [Docker compose 1.22+](https://docs.docker.com/compose/install/)
 
 以上安装，也涉及环境变量 PATH 配置正确。在命令行终端中执行以下命令，能够正确输出对应的版本号。
+
 ```bash
 java --version
 mvn --version # eg. Apache Maven 3.9.2
@@ -34,7 +35,7 @@ Docker 或 Docker compose 可以安装到 Linux/Windows/Mac 上，Docker 在开�
 
 ### 1. 安装 Java SDK
 
-春松客服使用[Amazon Corretto SDK 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/what-is-corretto-11.html)，原因：
+春松客服使用 [Amazon Corretto SDK 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/what-is-corretto-11.html)，原因：
 
 - 兼容 OpenJDK 标准
 - 良好的开源社区，可长期商业友好的使用，Amazon 发布，James Gosling 领导
@@ -50,7 +51,7 @@ Docker 或 Docker compose 可以安装到 Linux/Windows/Mac 上，Docker 在开�
 
 确保在 pom.xml 中存在如下的 maven 仓库配置。
 
-> [Chatopera Nexus](https://nexus.chatopera.com/)是代理 Maven Central，Alibaba Maven Repo 等节点的混合 Maven Repository，使用 Chatopera Nexus 不会影响项目使用其它公共包（Artifacts）
+> [Chatopera Nexus](https://nexus.chatopera.com/) 是代理 Maven Central，Alibaba Maven Repo 等节点的混合 Maven Repository，使用 Chatopera Nexus 不会影响项目使用其它公共包（Artifacts）
 
 在`<repositories><repository>`内存在：
 
@@ -110,7 +111,7 @@ git clone https://github.com/${YOUR_SPACE}/cskefu.git cskefu
 
 ### 4. 添加 Upstream
 
-Upstream 指春松客服 GitHub Repo（https://github.com/cskefu/cskefu），就是春松客服的项目库核心分支。添加 Upstream 的目的，是之后从春松客服项目拉取更新代码。
+Upstream 指春松客服 GitHub Repo [https://github.com/cskefu/cskefu](https://github.com/cskefu/cskefu)，就是春松客服的项目库核心分支。添加 Upstream 的目的，是之后从春松客服项目拉取更新代码。
 
 ```Bash
 cd cskefu

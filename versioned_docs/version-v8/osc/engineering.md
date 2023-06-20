@@ -300,17 +300,17 @@ MySQL 容器启动后，需要手动创建春松客服数据库。
 
 在 Windows 上，MySQL Workbench 依赖 [Visual C++ Redistributable](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)，需要提前安装。
 
-使用`docker-compose`启动的 MySQL 服务，其连接认证信息如下：
-
-| IP        | 用户名 | 密码   | 端口 |
-| --------- | ------ | ------ | ---- |
-| localhost | root   | 123456 | 8037 |
-
 <!-- markup:table-caption MySQL Workbench 配置 -->
 
 ![MySQL Workbench 安装](../images/products/cskefu/screenshot-20220326-103030.png)
 
 #### 执行 SQL 文件
+
+使用以上命令，通过 `docker-compose` 启动的 MySQL 服务，其连接认证信息如下：
+
+| IP        | 用户名 | 密码   | 端口 |
+| --------- | ------ | ------ | ---- |
+| localhost | root   | 123456 | 8037 |
 
 SQL 文件[^sql-getstart]包括两个部分：
 

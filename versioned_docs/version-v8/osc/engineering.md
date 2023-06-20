@@ -32,7 +32,7 @@ Docker 或 Docker compose 可以安装到 Linux/Windows/Mac 上，Docker 在开�
 
 :::
 
-## 安装 Java SDK
+### 1. 安装 Java SDK
 
 春松客服使用[Amazon Corretto SDK 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/what-is-corretto-11.html)，原因：
 
@@ -46,7 +46,7 @@ Docker 或 Docker compose 可以安装到 Linux/Windows/Mac 上，Docker 在开�
 
 :::
 
-## 配置 Maven
+### 2. 配置 Maven
 
 确保在 pom.xml 中存在如下的 maven 仓库配置。
 

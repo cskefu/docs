@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '春松客服',
   tagline: '迭代客服系统助力企业持续成长',
-  url: 'https://kaifuny.github.io/',
-  baseUrl: '/',
+  url: 'https://docs.cskefu.com',
+  baseUrl: '/cskefu-docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

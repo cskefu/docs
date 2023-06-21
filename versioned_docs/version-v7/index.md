@@ -10,6 +10,8 @@ sidebar_position: 1
 
 ![用户案例](images/products/cskefu/customers-2021.jpg)
 
+目前，春松客服 v7 已经不在积极维护，请参考[文档中心](https://docs.cskefu.com/docs/next/)使用稳定版本。
+
 ## 产品定义
 
 客服系统是企业的重要工具，尤其是移动互联网时代，微信公众号、移动电话或是 Facebook Messenger 等渠道分散了企业的服务渠道，企业需要响应来自任何地点任何时间的客户。同时，企业的口碑至关重要，企业服务需要在客户获得、客户激活、客户留存等阶段无懈可击。

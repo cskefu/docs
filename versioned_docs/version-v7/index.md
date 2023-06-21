@@ -8,9 +8,9 @@ sidebar_position: 1
 
 春松客服是拥有坐席管理、渠道管理、机器人客服、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。
 
-![用户案例](images/products/cskefu/customers-2021.jpg)
+!!! 目前，春松客服 v7 已经不在积极维护，请参考[文档中心](https://docs.cskefu.com/docs/next/)使用稳定版本。
 
-目前，春松客服 v7 已经不在积极维护，请参考[文档中心](https://docs.cskefu.com/docs/next/)使用稳定版本。
+![用户案例](images/products/cskefu/customers-2021.jpg)
 
 ## 产品定义
 

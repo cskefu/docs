@@ -10,7 +10,7 @@ jobs:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -20,7 +20,7 @@ jobs:
         run: npm ci
 
       - name: Build website
-        run: npm run build && mkdir -p build/.github/workflows && cp .github/workflows/gitee.yml build/.github/workflows
+        run: npm run build && mkdir -p build/.github/workflows && cp .github/workflows/gitee.yml build/.github/workflows && ls ./build/.github/workflows
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

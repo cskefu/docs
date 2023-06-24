@@ -128,8 +128,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: '邮件列表',
-                to: 'https://lists.cskefu.com/cgi-bin/mailman/listinfo/dev',
+                label: '工单列表',
+                to: 'https://github.com/cskefu/cskefu/issues',
               },
               {
                 label: 'Rss',
@@ -138,7 +138,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 春松客服，Inc. 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建`,
+        copyright: `Copyright © 2018-${new Date().getFullYear()} 春松客服，Inc. 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建`,
       },
       prism: {
         theme: lightCodeTheme,

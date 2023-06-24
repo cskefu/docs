@@ -49,6 +49,11 @@ cd cskefu.develop
 
 ## 配置项
 
+```
+cd cskefu.develop
+cp sample.env .env
+```
+
 以下为部署相关的环境变量，可以在 `.env` 中覆盖默认值。
 
 | KEY                  | 默认值             | 说明                                           |

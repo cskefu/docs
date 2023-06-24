@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="120"
+   height="20"
+   role="img"
+   aria-label="license: Apache-2.0"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="chunsong1.0.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs34">
+    <rect
+       x="44.214712"
+       y="1.1928429"
+       width="67.355865"
+       height="13.59841"
+       id="rect300" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="8.8918678"
+     inkscape:cx="28.902814"
+     inkscape:cy="33.063919"
+     inkscape:window-width="1920"
+     inkscape:window-height="998"
+     inkscape:window-x="-11"
+     inkscape:window-y="407"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g28" />
+  <title
+     id="title2">license: Apache-2.0</title>
+  <linearGradient
+     id="s"
+     x2="0"
+     y2="100%">
+    <stop
+       offset="0"
+       stop-color="#bbb"
+       stop-opacity=".1"
+       id="stop4" />
+    <stop
+       offset="1"
+       stop-opacity=".1"
+       id="stop6" />
+  </linearGradient>
+  <clipPath
+     id="r">
+    <rect
+       width="120"
+       height="20"
+       rx="3"
+       fill="#fff"
+       id="rect9" />
+  </clipPath>
+  <g
+     clip-path="url(#r)"
+     id="g18">
+    <rect
+       width="47"
+       height="20"
+       fill="#555"
+       id="rect12" />
+    <rect
+       x="47"
+       width="73"
+       height="20"
+       fill="#97ca00"
+       id="rect14" />
+    <rect
+       width="120"
+       height="20"
+       fill="url(#s)"
+       id="rect16" />
+  </g>
+  <g
+     fill="#ffffff"
+     text-anchor="middle"
+     font-family="Verdana, Geneva, 'DejaVu Sans', sans-serif"
+     text-rendering="geometricPrecision"
+     font-size="110px"
+     id="g28"
+     transform="translate(0,-2)">
+    <text
+       aria-hidden="true"
+       x="245"
+       y="150"
+       fill="#010101"
+       fill-opacity="0.3"
+       transform="matrix(0.1,0,0,0.1,0,2)"
+       textLength="370"
+       id="text20"
+       lengthAdjust="spacing">license</text>
+    <text
+       x="245"
+       y="140"
+       transform="matrix(0.1,0,0,0.1,0,2)"
+       fill="#ffffff"
+       textLength="370"
+       id="text22"
+       lengthAdjust="spacing">license</text>
+    <text
+       aria-hidden="true"
+       x="825"
+       y="150"
+       fill="#010101"
+       fill-opacity="0.3"
+       transform="matrix(0.10348234,0,0,0.1,-3.9679989,2)"
+       textLength="630"
+       id="text24"
+       lengthAdjust="spacing">Chunsong-1.0</text>
+    <text
+       x="825"
+       y="140"
+       transform="matrix(0.10349085,0,0,0.1,-3.8929282,2.3180915)"
+       fill="#ffffff"
+       textLength="630"
+       id="text26"
+       lengthAdjust="spacing">Chunsong-1.0</text>
+    <text
+       xml:space="preserve"
+       transform="translate(0,2)"
+       id="text298"
+       style="white-space:pre;shape-inside:url(#rect300);display:inline;fill:#000000" />
+  </g>
+</svg>

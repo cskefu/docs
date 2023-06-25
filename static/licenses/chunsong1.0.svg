@@ -15,6 +15,18 @@
   <defs
      id="defs34">
     <rect
+       x="80.159045"
+       y="16.222664"
+       width="1.2723658"
+       height="14.314115"
+       id="rect301" />
+    <rect
+       x="41.048743"
+       y="-5.5106532"
+       width="79.960703"
+       height="11.69608"
+       id="rect288" />
+    <rect
        x="44.214712"
        y="1.1928429"
        width="67.355865"
@@ -32,8 +44,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="8.8918678"
-     inkscape:cx="28.902814"
-     inkscape:cy="33.063919"
+     inkscape:cx="61.404422"
+     inkscape:cy="26.653568"
      inkscape:window-width="1920"
      inkscape:window-height="998"
      inkscape:window-x="-11"
@@ -99,14 +111,14 @@
        y="150"
        fill="#010101"
        fill-opacity="0.3"
-       transform="matrix(0.1,0,0,0.1,0,2)"
+       transform="matrix(0.1,0,0,0.1,0.67477386,0.78723618)"
        textLength="370"
        id="text20"
        lengthAdjust="spacing">license</text>
     <text
        x="245"
        y="140"
-       transform="matrix(0.1,0,0,0.1,0,2)"
+       transform="matrix(0.1,0,0,0.1,0.67477386,0.78723618)"
        fill="#ffffff"
        textLength="370"
        id="text22"
@@ -117,22 +129,47 @@
        y="150"
        fill="#010101"
        fill-opacity="0.3"
-       transform="matrix(0.10348234,0,0,0.1,-3.9679989,2)"
+       transform="matrix(0.1120551,0,0,0.1,-10.056163,0.78723618)"
        textLength="630"
        id="text24"
-       lengthAdjust="spacing">Chunsong-1.0</text>
-    <text
-       x="825"
-       y="140"
-       transform="matrix(0.10349085,0,0,0.1,-3.8929282,2.3180915)"
-       fill="#ffffff"
-       textLength="630"
-       id="text26"
-       lengthAdjust="spacing">Chunsong-1.0</text>
+       lengthAdjust="spacing"
+       style="font-size:101.27px">C h u n s o n g - 1 . 0</text>
     <text
        xml:space="preserve"
        transform="translate(0,2)"
        id="text298"
        style="white-space:pre;shape-inside:url(#rect300);display:inline;fill:#000000" />
+    <text
+       xml:space="preserve"
+       transform="translate(0,2)"
+       id="text286"
+       style="font-size:10.72px;white-space:pre;shape-inside:url(#rect288);display:inline;fill:#000000" />
+    <text
+       aria-hidden="true"
+       x="825"
+       y="150"
+       fill="#010101"
+       fill-opacity="0.3"
+       transform="matrix(0.1120551,0,0,0.1,-10.265103,0.08380308)"
+       textLength="630"
+       id="text292"
+       lengthAdjust="spacing"
+       style="font-size:101.27px;fill:#e6e6e6"
+       inkscape:transform-center-y="-1.2370854"><tspan
+         style="fill:#ffffff;fill-opacity:1"
+         id="tspan1084">C h u n s o n g - 1 . 0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.72px;fill:#000000"
+       x="75.687134"
+       y="5.598794"
+       id="text296"><tspan
+         sodipodi:role="line"
+         id="tspan294"></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="translate(0,2)"
+       id="text299"
+       style="font-size:10.72px;white-space:pre;shape-inside:url(#rect301);display:inline;fill:#000000" />
   </g>
 </svg>

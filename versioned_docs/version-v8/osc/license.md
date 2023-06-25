@@ -34,8 +34,3 @@ sidebar_position: 1
 [https://docs.cskefu.com/licenses/v1.diff-apache2.0.docx](https://docs.cskefu.com/licenses/v1.diff-apache2.0.docx)
 
 下载 v1.diff-apache2.0.docx 后，使用 Office Word 修订功能查看。就协议的正式内容，仍以 https://docs.cskefu.com/licenses/v1.html 为准。
-
-
-<div style="text-align:right"> 春松客服技术委员会，2023 年 06 月 25 日
-</div>
-

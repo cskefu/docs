@@ -359,6 +359,7 @@ Redis 管理工具，推荐 [AnotherRedisDesktopManager for Windows](https://git
 春松客服开发支持的 IDE，包括所有的支持 Spring Boot 的 IDE，以下仅提供部分工具的文档。
 
 - 【推荐】[Intelij IDEA](./ide_intelij_idea.md)
+- 【推荐】[Visual Studio Code](./ide_vscode.md)
 - [Eclipse IDE](./ide_eclipse.md)
 
 配置完成后，需要继续完成以下内容。

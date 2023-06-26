@@ -184,10 +184,10 @@ spring.datasource.username=root
 spring.datasource.password=123456
 
 # Redis服务器连接端口
-spring.redis.host=localhost
-spring.redis.port=8041
+spring.data.redis.host=localhost
+spring.data.redis.port=8041
 # Redis服务器连接密码（默认为空）
-spring.redis.password=123456
+spring.data.redis.password=123456
 
 # ActiveMQ
 spring.activemq.broker-url=tcp://localhost:8052

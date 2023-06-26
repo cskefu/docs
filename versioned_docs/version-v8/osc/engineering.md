@@ -14,7 +14,7 @@ sidebar_position: 3
 
 - 操作系统 Windows 或 Mac OS
 - [Git](https://git-scm.com/)
-- [Java 11+](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/what-is-corretto-11.html)
+- [Java 17+](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/what-is-corretto-17.html)
 - [Maven 3+](https://maven.apache.org/)
 - [Docker 18+](https://www.docker.com/)
 - [Docker compose 1.22+](https://docs.docker.com/compose/install/)
@@ -35,7 +35,7 @@ Docker 或 Docker compose 可以安装到 Linux/Windows/Mac 上，Docker 在开�
 
 ### 1. 安装 Java SDK
 
-春松客服使用 [Amazon Corretto SDK 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/what-is-corretto-11.html)，原因：
+春松客服使用 [Amazon Corretto SDK 17](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/what-is-corretto-17.html)，原因：
 
 - 兼容 OpenJDK 标准
 - 良好的开源社区，可长期商业友好的使用，Amazon 发布，James Gosling 领导
@@ -43,7 +43,7 @@ Docker 或 Docker compose 可以安装到 Linux/Windows/Mac 上，Docker 在开�
 
 :::caution 注意
 
-春松客服不使用其它版本的 JDK，如有其它 JDK 诉求自行测试：理论上，所有 OpenJDK 11 的 JVM 都是可以运行春松客服的。
+春松客服不使用其它版本的 JDK，如有其它 JDK 诉求自行测试：理论上，所有 OpenJDK 17 的 JVM 都是可以运行春松客服的。
 
 :::
 
@@ -145,7 +145,7 @@ git remote add upstream git@github.com:cskefu/cskefu.git
 
 ## 配置启动参数
 
-春松客服是基于 [Spring Boot Release 1.5.22.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.22.RELEASE) 开发，配置文件是
+春松客服是基于 Spring Boot Release 3.x 开发，配置文件是
 
 ```路径
 cskefu/contact-center/app/src/main/resources/application.properties

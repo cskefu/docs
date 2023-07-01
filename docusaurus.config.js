@@ -9,7 +9,7 @@ const config = {
   title: '春松客服',
   tagline: '迭代客服系统助力企业持续成长',
   url: 'https://docs.cskefu.com',
-  baseUrl: '/',
+  baseUrl: '/cskefu-docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

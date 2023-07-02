@@ -17,8 +17,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="http://hdxu.cn/6WMz8">
-            参加 v8 新版本发布会，腾讯会议，2023-07-01
+            to="https://www.bilibili.com/video/BV1TV411M7nj/">
+            春松客服 v8 发布，春松客服社区会议 20230701 回放
           </Link>
         </div>
       </div>

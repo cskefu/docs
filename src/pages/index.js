@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="https://www.bilibili.com/video/BV1TV411M7nj/">
-            春松客服 v8 发布，春松客服社区会议 20230701 回放
+            新版本 v8 发布，春松客服社区会议 20230701 回放
           </Link>
         </div>
       </div>

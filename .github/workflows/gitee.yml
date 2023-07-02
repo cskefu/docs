@@ -12,8 +12,16 @@ jobs:
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
+
     - uses: wangchucheng/git-repo-sync@v0.1.0
       with:
         target-url: https://gitee.com/cskefu/cskefu-docs.git
         target-username: ${{ secrets.USERNAME }}
         target-token: ${{ secrets.ACCESS_TOKEN }}
+
+    - uses: yanglbme/gitee-pages-action@main
+      with:
+        gitee-username: ${{ secrets.USERNAME }}
+        gitee-password: ${{ secrets.GITEE_USER_PASSWORD }}
+        gitee-repo: cskefu/cskefu-docs
+        branch: gh-pages

@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="https://www.huodongxing.com/event/5710126035423">
-            线上活动，春松客服社区会议 20230805
+            报名参加线上活动，春松客服社区会议 20230805
           </Link>
         </div>
       </div>

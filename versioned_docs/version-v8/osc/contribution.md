@@ -4,25 +4,22 @@ sidebar_position: 4
 
 # 提交代码
 
-春松客服一直会坚持[春松许可证](https://docs.cskefu.com/licenses/v1.html)，在保持开放的情况下，团结起来，一起做好开源客服系统，既然大家都在用春松客服，合作才会成为大赢家。
 
-提交代码，就是变更[春松客服项目库](https://github.com/chatopera/cskefu)中的内容，比如增加文档、变更代码、配置等。给春松客服提交代码是成为一个春松客服开发者的标志。相对于其它类型的贡献，提交代码需要更多的努力，因此，给春松客服提交代码，也是开源合作共赢精神的证明。
+本文档的作用：详细的说明如何提交代码到春松客服。
 
-## 成为春松客服开发者
+## 成为开发者我得到什么
+
+我们诚挚的邀请春松客服用户提交 PR，对做出突出贡献的开发者，春松客服技术委员会将邀请成为春松客服核心开发者，享受春松客服的收益分配，详情介绍参考：[成为春松客服核心开发者](https://www.cskefu.com/core-developers/).
 
 春松客服有很多用户，企业或独立开发者在使用春松客服，作为要不断优化的企业软件，春松客服得到很多的反馈建议，包括 BUG、需求、文档等。作为开源软件，可作为贡献者工作的也主要是三项：发现问题、分析问题和解决问题。现在，春松客服开源社区运作不平衡，很多人发现问题，少部分的人分析问题，解决问题的主要还是发布者。但是从另外一方面，也有一些春松客服用户在做变更，比如 [dph5199278/wit@621c949](https://github.com/dph5199278/wit/commit/621c949e471e8338045d0fef51dd77800dda950e)。
 
-如果大家做的变更公开了，但是却没有提交到春松客服 OSC 分支（春松客服源码的主分支），可能是缺少一份说明文档。这是本文档的作用：详细的说明如何提交代码到春松客服。
-
-我们诚挚的邀请春松客服用户提交 PR，成为春松客服的开发者：春松客服属于贡献者。
-
 以下内容为具体介绍，建议先全文读一遍再进行实践。
 
-提交代码的过程，可以简述为：1）确定工作内容；2）搭建开发环境；3）完成开发和测试；4）推送代码；5）提交 PR 到春松客服。在合并到春松客服 OSC 分支前，可能还会根据 Code Review 进行沟通和优化。
+提交代码的过程，可以简述为：1）确定工作内容；2）搭建开发环境；3）完成开发和测试；4）推送代码；5）提交 PR 到春松客服。在合并到春松客服 develop 分支前，还会根据 Code Review 进行沟通和优化。
 
 ## 确定工作的内容
 
-工作的内容记录在春松客服的[工单(Issue)](https://github.com/chatopera/cskefu/issues)中，可以创建根据您自己的需要创建工单，或者选择一个已有的工单。
+工作的内容记录在春松客服的[工单(Issue)](https://github.com/cskefu/cskefu/issues)中，可以创建根据您自己的需要创建工单，或者选择一个已有的工单。
 
 在工单中，对工作进行准确和清晰的定义，讨论，设计是非常有必要的，这个过程可以体现工作成熟度。
 
@@ -32,33 +29,11 @@ sidebar_position: 4
 
 开发环境搭建，包括下载源码、安装 IDE、启动数据库和配置项目等。
 
-详细内容，参考文档[开发环境搭建](https://docs.chatopera.com/products/cskefu/osc/engineering.html)。
+详细内容，参考文档[开发环境搭建](https://docs.cskefu.com/docs/osc/engineering)。
 
 ## 完成开发和测试
 
 在对工单进行思考后，开始着手实现，下面探讨两项相关内容。
-
-### Git 使用概述
-
-Git 用于版本管理，使用 Git 时，一个文件有三个可能存在的地方：indexed（索引区），staged（暂存区） 和 workarea（工作区）。indexed 文件就是被索引了（提交了）；staged 就是被临时的保存了（暂未提交，保护一下）；workarea，在编辑器中打开的这份。
-
-![Git 使用概述](../images/products/cskefu/git-scm-intro.png)
-
-上图中 master 所在区就是 indexed。
-
-Git 的版本管理，就是指这三个层面同一个文件的差异。
-
-Git add: 从 workarea 添加到 staged
-
-Git commit: 从 staged 到 indexed
-
-当然还有不同的方向，这构成了 git checkout, git stash, git restore, git reset, git clean 等命令。
-
-当本地的 Git 库和它的远程的 Git 库同步时，就涉及使用 git push 和 git pull。
-
-以上是对 Git 的简要介绍，快速入门 Git，首先熟悉它的远离，比如以上；其次，做一些练习，比如使用 [practice-git](https://github.com/grayghostvisuals/practice-git)。
-
-即便还没有理解，也可以按照下面的命令完成代码提交。
 
 ### 管理工作区
 
@@ -71,22 +46,6 @@ git checkout -b ${名称}
 ```
 
 然后，开始修改代码，进行测试。
-
-### 成为一个优秀的开发者
-
-要从工作中获得更多快乐，同时也为了不断涨薪，就需要不断的前进，依赖于：1）心态；2）技能。
-
-#### 关于心态
-
-这是一个比提升技能更需要时间和重视的部分，一个好的开发者的心态，可以和一个觉悟者相提并论了，那些个看不到、摸不着的字节，完成你的复杂的逻辑，需要你保持稳定和理性的状态。
-
-这方面有很多好的读物，比如[《程序员修炼之道：从小工到专家》](https://item.jd.com/10393278.html)、[《冥想》](https://item.jd.com/12058554.html)和[《程序员的自我修养——链接、装载与库》](https://item.jd.com/10024708744202.html)。这几本书，值得常看，常看可以常新。尤其是《冥想》，每天早晚各十分钟冥想，坚持 90 天，保证你成为程序员中的大师！
-
-#### 关于技能
-
-春松客服社区发布了[《春松客服大讲堂》](https://docs.chatopera.com/products/cskefu/osc/training.html)，快速的入门以及熟悉开发技能。
-
-在《春松客服大讲堂》中，有很多知识内容，而单元测试、AOP 变成、自动化测试等也涉及，内容丰富。
 
 ## 推送代码
 
@@ -149,7 +108,7 @@ To github.com:hailiang-wang/cskefu.git
 
 ## PR 被 Merge 后
 
-PR 被合并后，是指代码进入到了春松客服的[OSC 分支](https://github.com/chatopera/cskefu/tree/osc)，一个被 Merge 的 PR 状态显示为【Merged】，比如 [PR 666](https://github.com/chatopera/cskefu/pull/666)。
+PR 被合并后，是指代码进入到了春松客服的[develop 分支](https://github.com/cskefu/cskefu/tree/develop)，一个被 Merge 的 PR 状态显示为【Merged】，比如 [PR 666](https://github.com/cskefu/cskefu/pull/666)。
 
 ![同步代码](../images/products/cskefu/screenshot-20220328-095049.png)
 
@@ -174,8 +133,48 @@ git branch -d issue7
 
 <!-- markup:markdown-end -->
 
-## 自豪的
+## 结语
 
-春松客服是最流行的开源客服系统，现在已经在企业部署超过 17,000 次，为数百政府机构、事业单位和企业上线智能客服系统，现在您是春松客服的开发者一员了！
+春松客服是最流行的开源客服系统，现在已经在企业部署超过 19,000 次，为数百政府机构、事业单位和企业上线智能客服系统，现在您是春松客服的开发者一员了！
 
-春松客服会尽快的将您添加到[贡献者列表](https://github.com/chatopera/cskefu#%E8%B4%A1%E7%8C%AE%E8%80%85%E5%88%97%E8%A1%A8-)!
+春松客服会尽快的将您添加到[贡献者列表](https://github.com/cskefu/cskefu#%E8%B4%A1%E7%8C%AE%E8%80%85%E5%88%97%E8%A1%A8-)!
+
+## 附录
+
+### 成为一个优秀的开发者
+
+要从工作中获得更多快乐，同时也为了不断涨薪，就需要不断的前进，依赖于：1）心态；2）技能。
+
+#### 关于心态
+
+这是一个比提升技能更需要时间和重视的部分，一个好的开发者的心态，可以和一个觉悟者相提并论了，那些个看不到、摸不着的字节，完成你的复杂的逻辑，需要你保持稳定和理性的状态。
+
+这方面有很多好的读物，比如[《程序员修炼之道：从小工到专家》](https://item.jd.com/10393278.html)、[《冥想》](https://item.jd.com/12058554.html)和[《程序员的自我修养——链接、装载与库》](https://item.jd.com/10024708744202.html)。这几本书，值得常看，常看可以常新。尤其是《冥想》，每天早晚各十分钟冥想，坚持 90 天，保证你成为程序员中的大师！
+
+#### 关于技能
+
+春松客服社区发布了[《春松客服大讲堂》](https://docs.cskefu.com/docs/osc/training)，快速的入门以及熟悉开发技能。
+
+在《春松客服大讲堂》中，有很多知识内容，而单元测试、AOP 变成、自动化测试等也涉及，内容丰富。
+
+### Git 使用概述
+
+Git 用于版本管理，使用 Git 时，一个文件有三个可能存在的地方：indexed（索引区），staged（暂存区） 和 workarea（工作区）。indexed 文件就是被索引了（提交了）；staged 就是被临时的保存了（暂未提交，保护一下）；workarea，在编辑器中打开的这份。
+
+![Git 使用概述](../images/products/cskefu/git-scm-intro.png)
+
+上图中 master 所在区就是 indexed。
+
+Git 的版本管理，就是指这三个层面同一个文件的差异。
+
+Git add: 从 workarea 添加到 staged
+
+Git commit: 从 staged 到 indexed
+
+当然还有不同的方向，这构成了 git checkout, git stash, git restore, git reset, git clean 等命令。
+
+当本地的 Git 库和它的远程的 Git 库同步时，就涉及使用 git push 和 git pull。
+
+以上是对 Git 的简要介绍，快速入门 Git，首先熟悉它的远离，比如以上；其次，做一些练习，比如使用 [practice-git](https://github.com/grayghostvisuals/practice-git)。
+
+即便还没有理解，也可以按照下面的命令完成代码提交。

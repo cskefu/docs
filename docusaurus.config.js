@@ -53,98 +53,103 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: '春松客服',
-        logo: {
-          alt: '春松客服图标',
-          src: 'img/logo.png',
+  themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  {
+    navbar: {
+      title: '春松客服',
+      logo: {
+        alt: '春松客服图标',
+        src: 'img/logo.png',
+      },
+      items: [
+        {
+          type: 'doc',
+          docId: 'index',
+          position: 'left',
+          label: '文档中心',
         },
-        items: [
-          {
-            type: 'doc',
-            docId: 'index',
-            position: 'left',
-            label: '文档中心',
-          },
-          {
-            to: 'blog',
-            position: 'left',
-            label: '博客',
-          },
-          {to: 'https://github.com/cskefu/cskefu', label: '源码仓库', position: 'left'},
-          {to: 'https://www.cskefu.com/', label: '官网', position: 'left'},
-          {
-            type: "docsVersionDropdown",
-            position: "right",
-          },
-          {
-            href: 'https://github.com/cskefu/cskefu-docs',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: '文档',
-            items: [
-              {
-                label: '应用部署',
-                to: '/docs/deploy/',
-              },
-              {
-                label: '开发环境搭建',
-                to: '/docs/osc/engineering',
-              },
-              {
-                label: '提交代码',
-                to: '/docs/osc/contribution',
-              },
-            ],
-          },
-          {
-            title: '社区',
-            items: [
-              {
-                label: '组织原则',
-                href: 'https://www.cskefu.com/community-constitution/',
-              },
-              {
-                label: '关于我们',
-                href: 'https://www.cskefu.com/about/',
-              },
-              {
-                label: '加入我们',
-                href: 'https://www.cskefu.com/join-us/',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: '工单列表',
-                to: 'https://github.com/cskefu/cskefu/issues',
-              },
-              {
-                label: 'Rss',
-                href: 'https://www.cskefu.com/feed/',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © 2018-${new Date().getFullYear()} 春松客服，Inc. 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+        {
+          to: 'blog',
+          position: 'left',
+          label: '博客',
+        },
+        { to: 'https://github.com/cskefu/cskefu', label: '源码仓库', position: 'left' },
+        { to: 'https://www.cskefu.com/', label: '官网', position: 'left' },
+        {
+          type: "docsVersionDropdown",
+          position: "right",
+        },
+        {
+          href: 'https://github.com/cskefu/cskefu-docs',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: '文档',
+          items: [
+            {
+              label: '应用部署',
+              to: '/docs/deploy/',
+            },
+            {
+              label: '开发环境搭建',
+              to: '/docs/osc/engineering',
+            },
+            {
+              label: '提交代码',
+              to: '/docs/osc/contribution',
+            },
+          ],
+        },
+        {
+          title: '社区',
+          items: [
+            {
+              label: '组织原则',
+              href: 'https://www.cskefu.com/community-constitution/',
+            },
+            {
+              label: '关于我们',
+              href: 'https://www.cskefu.com/about/',
+            },
+            {
+              label: '加入我们',
+              href: 'https://www.cskefu.com/join-us/',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: '工单列表',
+              to: 'https://github.com/cskefu/cskefu/issues',
+            },
+            {
+              label: 'Rss',
+              href: 'https://www.cskefu.com/feed/',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © 2018-${new Date().getFullYear()} 春松客服开源社区, 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建`,
+    },
+    prism: {
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
+    },
+    // https://docusaurus.io/docs/api/themes/configuration
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    }
+  },
 };
 
 module.exports = config;

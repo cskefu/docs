@@ -102,6 +102,7 @@ cat $HOME/.ssh/id_rsa.pub
 
 * 工作前先有 Issue 号，比如 [https://github.com/cskefu/cskefu/issues/897](https://github.com/cskefu/cskefu/issues/897) 的 Issue 号就是 `879`，以下也使用 `#879` 指代 Issue 879;
 * 代码最终进入 Upstream/develop 分支即属于进入春松客服，不要直接更改Local/develop 和 Origin/develop 分支，这两个 Repo 的 develop 分支的更新是通过 `git pull upstream develop` 来完成的。
+* 代码是由[春松客服的 CodeOwners](https://github.com/cskefu/cskefu/issues/758) 合并进入 Upstream/develop 分支的。
 
 ### 1/15 Fork code repo
 
@@ -282,11 +283,11 @@ https://github.com/${个人 forked repo}/cskefu/pull/new/feature/879
 
 在这个页面，可以得到和添加更多的信息，比如查看审核者(Reviewers)，只有达到：
 
-* Code 审核通过的人数超过设定（目前为 1 人），目前，审核者是自动设置的，详细的规则查看：[春松客服的 CODEOWNERS](https://github.com/cskefu/cskefu/issues/758)
+* Code 审核通过的人数超过设定（目前为 1 人），目前，审核者是自动设置的，详细的规则查看：[春松客服的 CodeOwners](https://github.com/cskefu/cskefu/issues/758)
 * Code Review 没有讨论中的会话
 * PR 的自动检查通过
 
-分别对应 PR 页面中的下图部分的状态：
+PR 才可以由  CodeOwners 进行合并，分别对应 PR 页面中的下图部分的状态：
 
 ![](../../../static/img/products/screenshot_20230828081950.png)
 

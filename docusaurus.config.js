@@ -68,19 +68,13 @@ const config = {
           position: 'left',
           label: '文档中心',
         },
-        {
-          to: 'blog',
-          position: 'left',
-          label: '博客',
-        },
-        { to: 'https://github.com/cskefu/cskefu', label: '源码仓库', position: 'left' },
         { to: 'https://www.cskefu.com/', label: '官网', position: 'left' },
         {
           type: "docsVersionDropdown",
           position: "right",
         },
         {
-          href: 'https://github.com/cskefu/cskefu-docs',
+          href: 'https://github.com/cskefu/cskefu',
           label: 'GitHub',
           position: 'right',
         },
@@ -137,7 +131,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright © 2018-${new Date().getFullYear()} 春松客服开源社区, 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建`,
+      copyright: `Copyright © 2018-${new Date().getFullYear()} 北京华夏春松科技有限公司 | 京公网安备:<a href="https://beian.miit.gov.cn/">京ICP备20023756号-2</a> | 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建, <a href="https://github.com/cskefu/cskefu-docs">站点源码</a>`,
     },
     prism: {
       theme: lightCodeTheme,

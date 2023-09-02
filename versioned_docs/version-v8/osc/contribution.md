@@ -20,7 +20,7 @@ sidebar_position: 4
 以下内容已经发布视频，观看地址：
 
 * [Bilibili](https://www.bilibili.com/video/BV1D8411q73M)
-* [YouTube](https://youtu.be/wjTZoigr96U)
+* [YouTube](https://www.youtube.com/watch?v=lYCdIgxXUSE)
 
 视频和以下文档结合，可以更快的掌握提交代码的过程，建议先看视频后看文档。
 

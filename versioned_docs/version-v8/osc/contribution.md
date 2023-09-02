@@ -15,6 +15,15 @@ sidebar_position: 4
 
 本文撰写的主要目的，就是帮助您快速的掌握如何提交 PR[^what-is-pr] 到春松客服。
 
+## 视频教程
+
+以下内容已经发布视频，观看地址：
+
+* [Bilibili](https://www.bilibili.com/video/BV1D8411q73M)
+* [YouTube](https://youtu.be/wjTZoigr96U)
+
+视频和以下文档结合，可以更快的掌握提交代码的过程，建议先看视频后看文档。
+
 ## 前提准备
 
 按照以下顺序安装依赖工具，这些操作过程中，Git Flow 的安装稍显麻烦，但是 Git Flow 是必要的，当您遇到问题，可以创建 [Issue 来取得帮助](https://github.com/cskefu/cskefu/issues/new?labels=help-wanted&projects=&template=1_help.md)。

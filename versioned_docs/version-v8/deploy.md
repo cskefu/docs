@@ -79,6 +79,7 @@ cp sample.env .env
 | KEY                  | 默认值      | 说明                                                                                                     |
 | -------------------- | ----------- | -------------------------------------------------------------------------------------------------------- |
 | TONGJI_BAIDU_SITEKEY | placeholder | 使用[百度统计](https://tongji.baidu.com/web/welcome/login) 记录和查看页面访问情况，默认不记录            |
+| EXTRAS_AUTH_SUPER_ADMIN_PASS | admin1234 | 系统超级管理员 admin 的初始化密码 |
 | EXTRAS_LOGIN_BANNER  | off         | 登录页上方展示通知的内容，默认(off)不展示                                                                |
 | EXTRAS_LOGIN_CHATBOX | off         | 登录页支持加入一个春松客服网页渠道聊天按钮，比如 <https://oh-my.cskefu.com/im/xxx.html，默认(off>)不展示 |
 

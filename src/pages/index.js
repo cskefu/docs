@@ -17,8 +17,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://hdxu.cn/9hgwM">
-            报名参加线上活动，春松客服社区会议 20230902
+            to="https://docs.cskefu.com/docs/deploy/">
+            快速部署
           </Link>
         </div>
       </div>

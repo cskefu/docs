@@ -68,8 +68,8 @@ https://docs.cskefu.com/docs/osc/contribution
 
 |   |   |   |   |
 |---|---|---|---|
-|社区角色|昵称|邮箱|GitHub|
+|社区角色|昵称|邮箱| Profile |
 |产品经理|Kaifuny|kaifanzhang@cskefu.com|https://github.com/kaifuny|
 |技术专家|刘勇|ly@cskefu.com|https://github.com/lecjy|
 |春松客服总工程师|Hai Liang W.|h@cskefu.com|https://github.com/hailiang-wang|
-|春松客服技术委员会| N/A | tc@cskefu.com | N/A |
+|春松客服技术委员会| N/A | tc@cskefu.com | [春松客服技术委员会协作体系](https://www.cskefu.com/2023/09/13/tc-coord/) |

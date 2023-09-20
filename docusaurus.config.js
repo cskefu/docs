@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/cskefu/cskefu-docs/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/cskefu/docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/cskefu/cskefu-docs/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/cskefu/docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -74,8 +74,8 @@ const config = {
           position: "right",
         },
         {
-          href: 'https://github.com/cskefu/cskefu',
-          label: 'GitHub',
+          href: 'https://gitee.com/cskefu/cskefu',
+          label: 'SourceCodes',
           position: 'right',
         },
       ],
@@ -122,7 +122,7 @@ const config = {
           items: [
             {
               label: '工单列表',
-              to: 'https://github.com/cskefu/cskefu/issues',
+              to: 'https://gitee.com/cskefu/cskefu/issues',
             },
             {
               label: 'Rss',
@@ -131,7 +131,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright © 2018-${new Date().getFullYear()} 北京华夏春松科技有限公司 | 京公网安备:<a href="https://beian.miit.gov.cn/">京ICP备20023756号-2</a> | 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建, <a href="https://github.com/cskefu/cskefu-docs">站点源码</a>`,
+      copyright: `Copyright © 2018-${new Date().getFullYear()} 北京华夏春松科技有限公司 | 京公网安备:<a href="https://beian.miit.gov.cn/">京ICP备20023756号-2</a> | 使用 <a href="https://docusaurus.io/">Docusaurus</a> 构建, <a href="https://github.com/cskefu/docs">站点源码</a>`,
     },
     prism: {
       theme: lightCodeTheme,

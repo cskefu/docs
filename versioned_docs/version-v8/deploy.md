@@ -34,11 +34,11 @@ sidebar_position: 2
 ## 克隆代码
 
 ```Bash
-git clone -b develop https://github.com/cskefu/cskefu.git cskefu.develop
+git clone -b develop https://gitee.com/cskefu/cskefu.git cskefu.develop
 cd cskefu.develop
 ```
 
-以上命令中，`develop` 代表开发中的大版本，当前是 [cskefu/cskefu](https://github.com/cskefu/cskefu) v8。
+以上命令中，`develop` 代表开发中的大版本，当前是 [cskefu/cskefu](https://gitee.com/cskefu/cskefu) v8。
 
 | 分支 | 说明 | 版本 |
 | --- | --- | --- |

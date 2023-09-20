@@ -4,14 +4,15 @@
 
 [https://docs.cskefu.com/](https://docs.cskefu.com/)
 
-文档中心 GitHub：
+文档中心 Repo：
 
-[https://github.com/cskefu/cskefu-docs](https://github.com/cskefu/cskefu-docs)
+* [Gitee](https://gitee.com/cskefu/docs) 主站，Main Site
+* [GitHub](https://github.com/cskefu/docs) 副本，自动同步 Gitee
 
 
 文档中心 Issues：
 
-[https://github.com/cskefu/cskefu/issues?q=label%3Adocument+sort%3Aupdated-desc](https://github.com/cskefu/cskefu/issues?q=label%3Adocument+sort%3Aupdated-desc)
+[https://gitee.com/cskefu/cskefu/issues?label_ids=217611599](https://gitee.com/cskefu/cskefu/issues?label_ids=217611599)
 
 
 ## 开源许可协议

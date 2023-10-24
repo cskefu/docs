@@ -12,6 +12,6 @@ sidebar_position: 4
 
 ## 春松客服 v8 配额套餐包
 
-购买，使用说明等详细介绍，打开 [https://store.chatopera.com/product/cskefu001](https://store.chatopera.com/product/cskefu001)。
+购买，使用说明等详细介绍，打开： [https://store.chatopera.com/product/cskefu001](https://store.chatopera.com/product/cskefu001)
 
 ![](../../static/img/products/screenshot_20231024100318.png)

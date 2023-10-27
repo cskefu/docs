@@ -23,5 +23,13 @@ jobs:
       with:
         gitee-username: ${{ secrets.USERNAME }}
         gitee-password: ${{ secrets.GITEE_USER_PASSWORD }}
+        gitee-repo: cskefu/docs
+        branch: gh-pages
+
+    - uses: yanglbme/gitee-pages-action@main
+      with:
+        gitee-username: ${{ secrets.USERNAME }}
+        gitee-password: ${{ secrets.GITEE_USER_PASSWORD }}
         gitee-repo: readthe/cskefu-docs
         branch: gh-pages
+

@@ -19,12 +19,11 @@ jobs:
         target-username: ${{ secrets.USERNAME }}
         target-token: ${{ secrets.ACCESS_TOKEN }}
 
-    - uses: yanglbme/gitee-pages-action@main
+    - uses: wangchucheng/git-repo-sync@v0.1.0
       with:
-        gitee-username: ${{ secrets.USERNAME }}
-        gitee-password: ${{ secrets.GITEE_USER_PASSWORD }}
-        gitee-repo: cskefu/docs
-        branch: gh-pages
+        target-url: https://gitee.com/cskefu/docs.git
+        target-username: ${{ secrets.USERNAME }}
+        target-token: ${{ secrets.ACCESS_TOKEN }}
 
     - uses: yanglbme/gitee-pages-action@main
       with:

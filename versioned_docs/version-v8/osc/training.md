@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 春松客服大讲堂
+# 定制开发教程
 
 😉 春松客服大讲堂，面向开发者、软件工程师及运维人员的在线课程（视频及课件）。
 
@@ -10,16 +10,7 @@ sidebar_position: 2
 * 由浅入深的介绍春松客服上线智能客服系统、运营客服工作
 * 全面介绍春松客服插件、机器人客服的等原理和使用
 
-## 购买地址
-
-春松客服大讲堂通过 Chatopera 证书商店进行出售，通过购买的【证书标识】获得下载 URL 地址，或扫下图二维码。
-
-[https://store.chatopera.com/product/cskfdjt19](https://store.chatopera.com/product/cskfdjt19)
-
-![](../../../static/img/products/cskfdjt19_product_store_qr.jpg)
-
-
-## 课程大纲
+## 春松客服大讲堂
 
 共 7 章，合计 21 学时视频，552 页 PPT 课件。
 
@@ -157,6 +148,16 @@ sidebar_position: 2
     <td>00:30:08</td>
   </tr>
 </table>
+
+更多介绍，查看[购买地址](#购买地址)内详情。
+
+## 购买地址
+
+春松客服大讲堂通过 Chatopera 证书商店进行出售，通过购买的【证书标识】获得下载 URL 地址，或扫下图二维码。
+
+[https://store.chatopera.com/product/cskfdjt19](https://store.chatopera.com/product/cskfdjt19)
+
+![](../../../static/img/products/cskfdjt19_product_store_qr.jpg)
 
 ## 下载课程文件
 

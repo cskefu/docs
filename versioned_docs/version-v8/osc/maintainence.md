@@ -4,7 +4,12 @@ sidebar_position: 5
 
 # 系统维护
 
-以下文档基于[《春松客服私有部署》](https://docs.chatopera.com/products/cskefu/deploy.html)文档部署的案例，进行运维管理。
+## 视频教程
+
+本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](https://docs.cskefu.com/docs/osc/training)**。
+
+
+以下文档基于[《春松客服私有部署》](https://docs.cskefu.com/docs/deploy/)文档部署的案例，进行运维管理。
 
 假设春松客服部署目录为：_ROOT_PATH/cskefu.osc_。以下脚本假设部署服务器为 Linux 或包含 Bash 环境的 Windows 服务器，使用 Bash Shell 运行脚本。
 

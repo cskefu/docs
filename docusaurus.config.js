@@ -118,8 +118,12 @@ const config = {
           ],
         },
         {
-          title: 'More',
+          title: '更多',
           items: [
+            {
+              label: '定制开发教程',
+              to: 'https://docs.cskefu.com/docs/osc/training',
+            },
             {
               label: '工单列表',
               to: 'https://gitee.com/cskefu/cskefu/issues',

@@ -6,6 +6,10 @@ sidebar_position: 5
 
 << 回到[上一步：开发环境搭建](./engineering.md#初始化系统) <!-- markup:skip-line -->
 
+## 视频教程
+
+本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](https://docs.cskefu.com/docs/osc/training)**。
+
 ## 安装和下载 Eclipse
 
 ### 下载安装包

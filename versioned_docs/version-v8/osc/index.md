@@ -33,11 +33,10 @@ sidebar_position: 5
 
 在项目地址中，有详细的入门说明，如果使用遇到问题，第一时间[阅读文档](/products/cskefu/index.html)，第二时间搜索[历史 Issues](https://github.com/chatopera/cskefu/issues)，如果无法解决，加入社区提问。
 
-## 邮件列表
+## 视频教程
 
-春松客服邮件列表通过邮件服务沟通，跟踪最新的开发动态：
+本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](https://docs.cskefu.com/docs/osc/training)**。
 
-[https://lists.cskefu.com/cgi-bin/mailman/listinfo/dev](https://lists.cskefu.com/cgi-bin/mailman/listinfo/dev)
 
 ## 博客专栏
 

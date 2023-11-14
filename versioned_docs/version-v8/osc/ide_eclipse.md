@@ -119,7 +119,7 @@ cd cskefu.osc/contact-center
 
 ![启动 Debug](../images/products/cskefu/image2022-3-26_16-25-4.png)
 
-在配置页面，填写应用名称：contact-center - Application，project 选择 contact-center, Main Type 选择 com.chatopera.cc.Application。
+在配置页面，填写应用名称：contact-center - Application，project 选择 contact-center, Main Type 选择 com.cskefu.cc.Application。
 
 然后点击 Environment，点击 Add 添加：Name - SPRING_PROFILES_ACTIVE， Value - dev，字符串无空格。
 

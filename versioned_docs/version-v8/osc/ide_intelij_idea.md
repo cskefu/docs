@@ -27,7 +27,7 @@ cd contact-center
 
 ## 配置执行及调试
 
-配置运行方式为 Spring，应用为 `com.chatopera.cc.app.Application`
+配置运行方式为 Spring，应用为 `com.cskefu.cc.app.Application`
 
 ![设置 Main Class](../images/products/cosin/g10.png)
 

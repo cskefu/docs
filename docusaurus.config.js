@@ -113,7 +113,7 @@ const config = {
             },
             {
               label: '加入我们',
-              href: 'https://www.cskefu.com/join-us/',
+              href: 'https://tribe.cskefu.com/invite/28LjhB9f',
             },
           ],
         },

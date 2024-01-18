@@ -14,7 +14,7 @@ sidebar_position: 5
 
 ## 加入春松客服开源社区
 
-如何加入春松客服开源社区，[参考文档](https://www.cskefu.com/join-us/)
+如何加入春松客服开源社区，[参考文档](https://mp.weixin.qq.com/s/ILIuJFFqo5U9gkxd0O5f8w)
 
 ## 源码仓库
 
@@ -36,7 +36,6 @@ sidebar_position: 5
 ## 视频教程
 
 本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](https://docs.cskefu.com/docs/osc/training)**。
-
 
 ## 博客专栏
 

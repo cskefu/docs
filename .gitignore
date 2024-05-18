@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+# remove cache files
+.docusaurus
+build/
+.obsidian/workspace.json

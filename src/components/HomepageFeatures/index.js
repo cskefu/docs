@@ -13,20 +13,20 @@ const FeatureList = [
     ),
   },
   {
-    title: '安装简单',
+    title: '开源软件',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        春松客服适应各种部署方式，支持云原生一键部署，提供 Docker 和 Docker compose 作为默认安装方案，适合体验、开发、测试和上线春松客服。
+        春松客服使用的开源许可协议是 <a href="https://github.com/cskefu/cskefu/blob/develop/LICENSE">春松许可证 v1.0</a>，春松客服目前坐拥中文开源客服系统之中最多的 Stars, 最多的下载次数，最多的用户反馈。
       </>
     ),
   },
   {
-    title: '开源软件',
+    title: '商业服务',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        春松客服使用的开源许可协议是 <a href="https://github.com/cskefu/cskefu/blob/develop/LICENSE">春松许可证 v1.0</a>，春松客服目前坐拥中文开源客服系统之中最多的 Stars, 最多的下载次数，最多的用户反馈。
+        <a href='https://www.chatopera.com/' target='_blank'>Chatopera</a> 提供有关春松客服的商业化服务及春松客服企业版，咨询详细功能、定制开发、报价或合作，欢迎与我们进行<a target='_blank' href='https://www.chatopera.com/mail.html'>商业洽谈</a>。
       </>
     ),
   },

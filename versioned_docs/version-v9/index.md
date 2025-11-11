@@ -60,9 +60,8 @@ sidebar_position: 1
 
 指代熟悉客户业务的人员，业务专家可以提供产品设计的意见，可以参与智能问答的质量评定，也可以作为管理员登录智能客服系统，配置系统，管理智能对话和训练。
 
-## 关注春松客服公众号
+## 关注 Chatopera 公众号
 
-及时获得产品更新、活动分享等信息。
+及时获得春松客服产品更新、活动分享等信息。
 
-![春松客服公众号](images/products/cskefu/cskefu-wechat-gzh.png)
-
+![](../../static/img/products/screenshot_20251111113339.png)

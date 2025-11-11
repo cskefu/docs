@@ -1,8 +1,12 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # 应用部署
+
+## 视频教程
+
+本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](https://docs.cskefu.com/docs/osc/training)**。
 
 春松客服适应各种部署方式，本文使用 Docker 和 Docker compose 的方式，适合体验、开发、测试和上线春松客服，此种方式简单快捷。
 
@@ -16,7 +20,7 @@ sidebar_position: 2
 
 | 项目                | 说明                                                          |
 | ------------------- | ------------------------------------------------------------- |
-| 操作系统            | **Ubuntu 16.04+**；鉴于下述部署方案基于 Docker 和 Docker Compose，其它操作系统如 CentOS 7.x 理论上也兼容 |
+| 操作系统            | Linux (CentOS 7.x, Ubuntu 16.04+ 等)，**推荐使用 Ubuntu LTS** |
 | Docker 版本         | Docker version 1.13.x 及以上                                  |
 | Docker Compose 版本 | version 1.23.x 及以上                                         |
 | 防火墙端口          | 8035, 8036                                                    |
@@ -24,6 +28,7 @@ sidebar_position: 2
 | 内存                | 开发测试 >= 8GB \| 生产环境 >= 16GB                           |
 | CPU 颗数            | 开发测试 >= 2 \| 生产环境 >= 4                                |
 | 硬盘                | >= 20GB                                                       |
+
 <!-- markup:table-caption 部署依赖资源的最低配置 -->
 
 ### 安全组
@@ -33,21 +38,25 @@ sidebar_position: 2
 ## 克隆代码
 
 ```Bash
-git clone -b master https://github.com/cskefu/cskefu.git cskefu
-cd cskefu
-cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求需改配置
+git clone -b develop https://gitee.com/cskefu/cskefu.git cskefu.develop
+cd cskefu.develop
 ```
 
-以上命令中，`master` 代表春松客服源码仓库的 master 分支，目前是 [cskefu/cskefu](https://github.com/cskefu/cskefu) 的 v7 版本代码，分支说明。
+以上命令中，`develop` 代表开发中的大版本，当前是 [cskefu/cskefu](https://gitee.com/cskefu/cskefu) v8。
 
-| 分支 | 说明 | 目前对应版本 |
+| 分支 | 说明 | 版本 |
 | --- | --- | --- |
-| master | 当前稳定版本 | v7.x |
+| master | 当前稳定版本 | v7.x | 
 | develop | 当前开发版本 | v8.x |
 
-克隆代码时，按照需要指定分支信息；本部署文档针对春松客服 v7.x 版本。
+克隆代码时，按照需要指定分支信息；本部署文档针对春松客服 v8.x 版本。
 
 ## 配置项
+
+```
+cd cskefu.develop
+cp sample.env .env
+```
 
 以下为部署相关的环境变量，可以在 `.env` 中覆盖默认值。
 
@@ -57,8 +66,6 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 | COMPOSE_PROJECT_NAME | cskefu             | 服务实例的容器前缀，可以用其它字符串           |
 | MYSQL_PORT           | 8037               | MySQL 数据库映射到宿主机器使用的端口           |
 | REDIS_PORT           | 8041               | Redis 映射到宿主机器的端口                     |
-| ES_PORT1             | 8039               | ElasticSearch RestAPI 映射到宿主机器的端口     |
-| ES_PORT2             | 8040               | ElasticSearch 服务发现端口映射到宿主机器的端口 |
 | CC_WEB_PORT          | 8035               | 春松客服 Web 服务地址映射到宿主机器的端口      |
 | CC_SOCKET_PORT       | 8036               | 春松客服 SocketIO 服务映射到宿主机器的端口     |
 | ACTIVEMQ_PORT1       | 8051               | ActiveMQ 端口                                  |
@@ -76,6 +83,7 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 | KEY                  | 默认值      | 说明                                                                                                     |
 | -------------------- | ----------- | -------------------------------------------------------------------------------------------------------- |
 | TONGJI_BAIDU_SITEKEY | placeholder | 使用[百度统计](https://tongji.baidu.com/web/welcome/login) 记录和查看页面访问情况，默认不记录            |
+| EXTRAS_AUTH_SUPER_ADMIN_PASS | admin1234 | 系统超级管理员 admin 的初始化密码 |
 | EXTRAS_LOGIN_BANNER  | off         | 登录页上方展示通知的内容，默认(off)不展示                                                                |
 | EXTRAS_LOGIN_CHATBOX | off         | 登录页支持加入一个春松客服网页渠道聊天按钮，比如 <https://oh-my.cskefu.com/im/xxx.html，默认(off>)不展示 |
 
@@ -193,3 +201,4 @@ docker-compose up -d contact-center
 ### 系统维护
 
 - [系统维护：备份、升级和恢复回退等](/docs/osc/maintainence)
+

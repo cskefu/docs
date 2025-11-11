@@ -13,11 +13,11 @@ const FeatureList = [
     ),
   },
   {
-    title: '开源软件',
+    title: '源码开放',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        春松客服使用的开源许可协议是 <a href="https://github.com/cskefu/cskefu/blob/develop/LICENSE">春松许可证 v1.0</a>，春松客服目前坐拥中文开源客服系统之中最多的 Stars, 最多的下载次数，最多的用户反馈。
+        春松客服面向企业客户开放源码，方便企业定制化开发，长期使用。
       </>
     ),
   },

@@ -4,6 +4,10 @@ sidebar_position: 13
 
 # FAQ
 
+## 视频教程
+
+本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](https://docs.cskefu.com/docs/osc/training)**。
+
 以下总结[春松客服](index.html)的大家关心的常问问题，是基于企业客户/开发者的咨询整理而来。
 
 ## 问答列表
@@ -104,6 +108,6 @@ Chatopera 全部开源项目查看 [https://github.com/chatopera](https://github
 
 **问：这个项目要怎么启动呢**
 
-- 服务器部署：<https://docs.cskefu.comdeploy.html>
+- 服务器部署：<https://docs.cskefu.com/docs/deploy>
 
-- 开发环境搭建：<https://docs.cskefu.comosc/engineering.html>
+- 开发环境搭建：<https://docs.cskefu.com/docs/osc/engineering.html>

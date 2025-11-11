@@ -1,10 +1,14 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # IDE 使用之 Eclipse IDE
 
 << 回到[上一步：开发环境搭建](./engineering.md#初始化系统) <!-- markup:skip-line -->
+
+## 视频教程
+
+本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](https://docs.cskefu.com/docs/osc/training)**。
 
 ## 安装和下载 Eclipse
 
@@ -115,7 +119,7 @@ cd cskefu.osc/contact-center
 
 ![启动 Debug](../images/products/cskefu/image2022-3-26_16-25-4.png)
 
-在配置页面，填写应用名称：contact-center - Application，project 选择 contact-center, Main Type 选择 com.chatopera.cc.Application。
+在配置页面，填写应用名称：contact-center - Application，project 选择 contact-center, Main Type 选择 com.cskefu.cc.Application。
 
 然后点击 Environment，点击 Add 添加：Name - SPRING_PROFILES_ACTIVE， Value - dev，字符串无空格。
 

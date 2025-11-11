@@ -1,12 +1,17 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # 系统维护
 
-以下文档基于[《春松客服私有部署》](/docs/deploy)文档部署的案例，进行运维管理。
+## 视频教程
 
-假设春松客服部署目录为：_ROOT_PATH/cskefu.develop_。以下脚本假设部署服务器为 Linux 或包含 Bash 环境的 Windows 服务器，使用 Bash Shell 运行脚本。
+本文介绍如何完成春松客服开发环境的搭建，**面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](https://docs.cskefu.com/docs/osc/training)**。
+
+
+以下文档基于[《春松客服私有部署》](https://docs.cskefu.com/docs/deploy/)文档部署的案例，进行运维管理。
+
+假设春松客服部署目录为：_ROOT_PATH/cskefu.osc_。以下脚本假设部署服务器为 Linux 或包含 Bash 环境的 Windows 服务器，使用 Bash Shell 运行脚本。
 
 ## 注意事项及官方声明
 
@@ -18,17 +23,17 @@ sidebar_position: 3
 
 ## 关于春松客服版本号
 
-_ROOT_PATH/cskefu.osc/.env_(以下简称 _.env_) 文件作为配置春松客服版本和环境变量的文件，也记录着 Docker 启动春松客服的版本信息，该文件在[部署阶段](https://docs.cskefu.com/docs/deploy/)创建。
+_ROOT_PATH/cskefu.osc/.env_(以下简称 _.env_) 文件作为配置春松客服版本和环境变量的文件，也记录着 Docker 启动春松客服的版本信息，该文件在[部署阶段](/products/cskefu/deploy.html)创建。
 
 ```文本
 CC_IMAGE=chatopera/contact-center:develop
 ```
 
-在开源版本中，镜像的名字是 `chatopera/contact-center`，默认的版本是 `develop`，所有可选的版本在 [GitHub](https://github.com/chatopera/cskefu/commits/develop) 中可以浏览到：
+在开源版本中，镜像的名字是 `chatopera/contact-center`，默认的版本是 `develop`，所有可选的版本在 [GitHub](https://github.com/chatopera/cskefu/commits/osc) 中可以浏览到：
 
 ![版本管理](../images/products/cskefu/screenshot-20210720-135039.png)
 
-<https://github.com/chatopera/cskefu/commits/develop>
+<https://github.com/chatopera/cskefu/commits/osc>
 
 为了方便管理，春松客服 Git Commit Short ID 也是春松客服 Docker 镜像的 Tag，也常用 Docker 镜像版本号来指代。**在 GitHub** Commit 历史中，有对号的版本就是完成了对应的 Docker 镜像发布的版本，`develop` 标签就是已经发布的最近的版本。
 
@@ -47,7 +52,7 @@ CC_IMAGE=chatopera/contact-center:develop
 设置春松客服容器版本到 .env。
 
 ```Bash
-cd ROOT_PATH/cskefu.develop
+cd ROOT_PATH/cskefu.osc
 vi .env         # 使用文本编辑器编辑
 ```
 
@@ -65,7 +70,7 @@ CC_IMAGE=chatopera/contact-center:YOUR_VERSION
 
 ```Bash
 TIMESTAMP=$(date +%Y%m%d_%H%M)
-cd ROOT_PATH/cskefu.develop
+cd ROOT_PATH/cskefu.osc
 docker-compose down # 停止服务
 cd ../              # 来到父级目录
 tar czfp cskefu.osc.$TIMESTAMP.tgz cskefu.osc # 打包备份
@@ -86,7 +91,7 @@ tar czfp cskefu.osc.$TIMESTAMP.tgz cskefu.osc # 打包备份
 参考前文【关于春松客服版本号】获得春松客服最新的版本信息，然后执行以下操作。
 
 ```Bash
-cd ROOT_PATH/cskefu.develop
+cd ROOT_PATH/cskefu.osc
 docker-compose down       # 停止服务
 vi .env      # 打开配置文件
 ```
@@ -94,33 +99,33 @@ vi .env      # 打开配置文件
 找到修改或添加
 
 ```文本
-CC_IMAGE=cskefu/contact-center:YOUR_VERSION
+CC_IMAGE=chatopera/contact-center:YOUR_VERSION
 ```
 
 将 `YOUR_VERSION` 替换为春松客服新的版本号。
 
 ```Bash
-cd ROOT_PATH/cskefu.develop
+cd ROOT_PATH/cskefu.osc
 docker-compose up -d     # 重启服务，此时，docker 会自动拉取新版本的镜像
 ```
 
 ## 回滚到系统备份
 
-假设备份文件压缩包的位置是：`/root/cskefu.develop.202107001.tgz`。
+假设备份文件压缩包的位置是：`/root/cskefu.osc.202107001.tgz`。
 
 ```Bash
-cd ROOT_PATH/cskefu.develop
+cd ROOT_PATH/cskefu.osc
 docker-compose down
 cd ..
-mv cskefu.develop cskefu.develop.backup # 将当前的文件存放在临时位置（万一还会用到，只是以防有可能用到）
-tar xzfp /root/cskefu.develop.202107001.tgz # 备份文件被解压到 ROOT_PATH/cskefu.osc
-cd ROOT_PATH/cskefu.develop
+mv cskefu.osc cskefu.osc.backup # 将当前的文件存放在临时位置（万一还会用到，只是以防有可能用到）
+tar xzfp /root/cskefu.osc.202107001.tgz # 备份文件被解压到 ROOT_PATH/cskefu.osc
+cd ROOT_PATH/cskefu.osc
 docker-compose up -d    # 启动服务
 docker-compose logs -f contact-center # 查看日志
 ```
 
 在春松客服运行后，在浏览器内访问并验证服务正常。升级完毕。
-当系统可以稳定运行，比如 2 个月，再酌情删除 `cskefu.develop.backup`。
+当系统可以稳定运行，比如 2 个月，再酌情删除 `cskefu.osc.backup`。
 
 <!-- markup:markdown-end -->
 
@@ -128,4 +133,4 @@ docker-compose logs -f contact-center # 查看日志
 
 - [搭建春松客服性能监控服务（付费视频）](https://ke.qq.com/webcourse/index.html#cid=464050&term_id=100555327&taid=4785516986176690&type=1024&vid=5285890796447482734)
 
-- [搭建开发环境](/docs/osc/engineering)
+- [搭建开发环境](/products/cskefu/osc/engineering.html)

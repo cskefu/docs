@@ -6,29 +6,18 @@ sidebar_position: 2
 
 春松客服 v9 是一个企业客服系统解决方案，通过模块化完成企业客户服务工作的运营，包括座席工作台、联系人管理、访客渠道和会话管理等。
 
-目前，春松客服包括两个产品和服务模式：
-
-![](../../static/img/products/screenshot_20250615190744.png)
-
 **企业版具备更友好的代码授权、功能以及服务，更可靠稳定，企业版更适合企业使用！**
-
-| 模式 | EE / 企业版 | OSS / 开源版 |
-| --- | --- | --- |
-| 开源 | 仅对购买用户提供源码 | 是 |
-| 源码许可证 | 可任意修改、销售 | [源码地址](https://github.com/cskefu/cskefu)，[春松许可证, v1.0](https://docs.cskefu.com/docs/osc/license) |
-| 收费模式 | 根据服务项目进行[商业洽谈](https://www.chatopera.com/mail.html) | 启动服务后导入[授权证书](https://store.chatopera.com/product/cskefu001) |  
-| 软件迭代 | 官方团队迭代开发 | 通过[开源社区](https://www.cskefu.com/)形式 |
-| 技术支持 | 官方技术团队商业支持 | 通过开源社区[提交工单](https://github.com/cskefu/cskefu/issues) | 
-| 部署及运维 | 官方技术团队商业支持 | 根据开源社区文档，[文档中心](https://docs.cskefu.com/docs/) |
-| 使用培训 | 客服系统及二次开发的培训由官方团队支持 | 购买[春松客服大讲堂](https://docs.cskefu.com/docs/osc/training) |
-
 
 ## 产品版本
 
+**春松客服 v9 是一个闭源客服系统，目前官方已经终止维护，但是因为春松客服 v9 以 v8 为基础升级而来，依然沿用了 Java, SpringBoot 技术栈，为众多开发者所喜欢和使用，因为我们继续提供 v9 的商业产品，但是主要是开发者（或客户）自行维护。**
+
+不同版本介绍：
+
 | 代号 | 版本 | 状态 | 介绍 | 
 | --- | --- | --- | --- | 
-| v10 | EE / 企业版 | Active / 活跃中 （*推荐） | [链接](https://dwz.chatopera.com/0bv6R1) |
-| v9 | EE / 企业版 | Maintenance / 维护中，面向企业客户 | [链接](https://www.bilibili.com/video/BV1YVatzFEKb/) |
+| v10 | EE / 企业版 | Active / 活跃中 （*推荐） | [购买垂询](https://www.chatopera.com/mail.html) |
+| v9 | EE / 企业版 | Sunset / 维护终止 | [介绍视频](https://www.bilibili.com/video/BV1YVatzFEKb/) \| [购买地址](https://store.chatopera.com/product/cskfv9) |
 | v8.x | OSS / 开源版 | Sunset / 维护终止 ([GitHub](https://github.com/cskefu/cskefu/tree/develop) \| [Gitee](https://gitee.com/cskefu/cskefu/tree/develop/)) | [链接](https://docs.cskefu.com/docs/) |
 
 ### EE / 企业版
@@ -37,55 +26,26 @@ sidebar_position: 2
 
 春松客服由 [Chatopera](https://www.chatopera.com/) 于 2018 年发布，持续迭代，春松客服开源版核心代码来自于 Chatopera 团队多年的深耕，是您在使用春松客服解决方案最可靠的选择！
 
-
 ### OSS / 开源版
 
-春松客服以【使用授权证书】的形式收取服务费用。春松客服内置免费的可用的资源，赠送这些资源是为了帮助企业用户体验春松客服。
+春松客服 v8 采用春松许可证：
 
-春松客服使用授权证书是通过 Chatopera 证书商店（ https://store.chatopera.com ）分发的对【春松客服计费资源】进行管理的凭证，在使用春松客服的过程中，春松客服与 Chatopera 证书商店集成，完成证书购买、证书绑定、配额扣除、配额同步和开具发票等。
+```
+Copyright 2023 Beijing Huaxia Chunsong Technology Co., Ltd. <https://www.chatopera.com> 
 
+Licensed under the Chunsong Public License, Version 1.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-## 春松客服开源版 v8 - 配额套餐包
+ https://docs.cskefu.com/licenses/v1.html
 
-春松客服 v8 使用授权证书导入分为三个步骤：
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
 
-* 购买使用授权证书
-* 复制使用授权证书标识
-* 导入春松客服 v8
-
-
-###  购买使用授权证书
-
-购买，使用说明等详细介绍，打开证书商店： 
-
-[https://store.chatopera.com/product/cskefu001](https://store.chatopera.com/product/cskefu001)
-
-![](../../static/img/products/screenshot_20231024100318.png)
-
-
-### 复制使用授权证书标识
-
-进入证书商店【证书】列表：
-
-[https://store.chatopera.com/store/license](https://store.chatopera.com/store/license)
-
-找到刚刚购买的证书，进入详情页面。
-
-![](../../static/img/products/screenshot_20231027141906.png)
-
-点击【复制证书标识】，这是证书标识被复制到了系统粘贴板。
-
-### 导入春松客服 v8
-
-以超级管理员 【admin】的身份登录春松客服，导航至【系统管理-使用授权-授权证书列表】。
-
-![](../../static/img/products/screenshot_20231027142234.png)
-
-在弹出的表单中，粘贴【证书标识】，点击【立即提交】。
-
-![](../../static/img/products/screenshot_20231027142324.png)
-
-导入完成。
-
+**对于侵权行为，我们将积极通过法律途径进行维权，在 2023 ~ 2025 年间，已经送达了 ~20 件诉讼涵，在广东、上海、北京多地进行了诉讼。**
 
 [^More]: 北京华夏春松科技有限公司依然保留春松客服相关知识产权，购买客户有使用权；购买客户不可以以“春松客服”名义销售软件

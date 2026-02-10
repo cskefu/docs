@@ -2,4 +2,4 @@
 sidebar_position: 4
 ---
 
-# 通用设置
+# 团队管理

@@ -2,4 +2,4 @@
 sidebar_position: 3
 ---
 
-# 团队管理
+# 账号管理

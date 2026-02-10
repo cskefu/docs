@@ -2,5 +2,4 @@
 sidebar_position: 7
 ---
 
-# 自定义属性
-
+# AI 和效率工具

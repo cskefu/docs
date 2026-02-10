@@ -117,8 +117,8 @@ const config = {
               to: 'https://www.chatopera.com/mail.html',
             },
             {
-              label: 'Rss',
-              href: 'https://www.cskefu.com/feed/',
+              label: '产品或服务价格',
+              href: 'https://www.chatopera.com/price.html',
             },
           ],
         },

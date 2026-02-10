@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://docs.cskefu.com/docs/next/">
+            to="/docs/next/">
             版本及服务
           </Link>
         </div>

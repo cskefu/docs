@@ -74,8 +74,8 @@ const config = {
           position: "right",
         },
         {
-          href: 'https://gitee.com/cskefu/cskefu',
-          label: 'SourceCodes',
+          href: 'https://www.chatopera.com/mail.html',
+          label: '商务洽谈',
           position: 'right',
         },
       ],
@@ -87,33 +87,25 @@ const config = {
           title: '文档',
           items: [
             {
-              label: '应用部署',
-              to: '/docs/deploy/',
+              label: '入门教程',
+              to: '/docs/quickstart/',
             },
             {
-              label: '开发环境搭建',
-              to: '/docs/osc/engineering',
-            },
-            {
-              label: '提交代码',
-              to: '/docs/osc/contribution',
+              label: '成功案例',
+              href: 'https://www.chatopera.com/customer.html',
             },
           ],
         },
         {
-          title: '社区',
+          title: '新闻',
           items: [
             {
-              label: '组织原则',
-              href: 'https://www.cskefu.com/community-constitution/',
+              label: '上线 AI 机器人',
+              href: 'https://mp.weixin.qq.com/s/WMEfQyaFFv8dIuDGtJsxlQ',
             },
             {
-              label: '关于我们',
-              href: 'https://www.cskefu.com/about/',
-            },
-            {
-              label: '加入我们',
-              href: 'https://tribe.cskefu.com/invite/28LjhB9f',
+              label: '春松客服 v10 发布',
+              href: 'https://mp.weixin.qq.com/s/WMEfQyaFFv8dIuDGtJsxlQ',
             },
           ],
         },
@@ -121,12 +113,8 @@ const config = {
           title: '更多',
           items: [
             {
-              label: '定制开发教程',
-              to: 'https://docs.cskefu.com/docs/osc/training',
-            },
-            {
-              label: '工单列表',
-              to: 'https://gitee.com/cskefu/cskefu/issues',
+              label: '联系我们',
+              to: 'https://www.chatopera.com/mail.html',
             },
             {
               label: 'Rss',

@@ -13,11 +13,11 @@ const FeatureList = [
     ),
   },
   {
-    title: '源码开放',
+    title: '灵活上线',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        春松客服面向企业客户开放源码，方便企业定制化开发，长期使用。
+        春松客服提供云服务及私有部署方案，以及不同账单形式，支持企业灵活的、长期稳定的使用。
       </>
     ),
   },

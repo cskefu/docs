@@ -12,7 +12,7 @@ sidebar_position: 3
 
 重要提示：部署应用后，必须按照《系统初始化》[^initdoc]文档进行系统初始化，再使用，不做初始化，会造成坐席无法分配等问题。
 
-[^initdoc]: 系统初始化文档，https://docs.cskefu.com/docs/initialization/
+[^initdoc]: 系统初始化文档，https://docs.cskefu.com/docs/v9/initialization/
 
 ## 准备条件
 
@@ -35,26 +35,16 @@ sidebar_position: 3
 
 如果使用云主机，要考虑到不同云服务提供商的安全组设置，允许 8035 和 8036 端口下行。
 
-## 克隆代码
+## 购买安装包
 
-```Bash
-git clone -b develop https://gitee.com/cskefu/cskefu.git cskefu.develop
-cd cskefu.develop
-```
+购买地址：[https://store.chatopera.com/product/cskfv9](https://store.chatopera.com/product/cskfv9)
 
-以上命令中，`develop` 代表开发中的大版本，当前是 [cskefu/cskefu](https://gitee.com/cskefu/cskefu) v8。
-
-| 分支 | 说明 | 版本 |
-| --- | --- | --- |
-| master | 当前稳定版本 | v7.x | 
-| develop | 当前开发版本 | v8.x |
-
-克隆代码时，按照需要指定分支信息；本部署文档针对春松客服 v8.x 版本。
+按照[页面](https://store.chatopera.com/product/cskfv9)提示，获得 `cskfv9.tar.gz`，并解压，得到文件夹：`cskfv9`.
 
 ## 配置项
 
 ```
-cd cskefu.develop
+cd cskfv9/sourcecodes
 cp sample.env .env
 ```
 
@@ -84,7 +74,7 @@ cp sample.env .env
 | -------------------- | ----------- | -------------------------------------------------------------------------------------------------------- |
 | TONGJI_BAIDU_SITEKEY | placeholder | 使用[百度统计](https://tongji.baidu.com/web/welcome/login) 记录和查看页面访问情况，默认不记录            |
 | EXTRAS_AUTH_SUPER_ADMIN_PASS | admin1234 | 系统超级管理员 admin 的初始化密码 |
-| EXTRAS_LOGIN_BANNER  | off         | 登录页上方展示通知的内容，默认(off)不展示                                                                |
+| NOTICE_LOGIN_BANNER  | off         | 登录页上方展示通知的内容，默认(off)不展示                                                                |
 | EXTRAS_LOGIN_CHATBOX | off         | 登录页支持加入一个春松客服网页渠道聊天按钮，比如 <https://oh-my.cskefu.com/im/xxx.html，默认(off>)不展示 |
 
 <!-- markup:table-caption 业务相关环境变量 -->
@@ -94,7 +84,7 @@ cp sample.env .env
 ### 启动服务
 
 ```Bash
-cd cskefu                        # 进入下载后的文件夹
+cd cskfv9/sourcecodes                      # 进入下载后的文件夹
 docker-compose pull                  # 拉取镜像
 docker-compose up -d contact-center  # 启动服务
 ```
@@ -137,44 +127,24 @@ docker-compose restart
 
 ## 无网络访问条件下部署
 
-### 利用其他机器
+首先，将购买的安装包 `cskfv9.tar.gz` 上传目标机器。
 
-首先，找一个网络条件好的电脑或服务器，安装 docker。
+### 安装镜像
 
-### 下载镜像
+然后，在新的电脑安装镜像。
 
-然后，在新的电脑下载镜像。
+* 执行命令的用户，已经具备 docker 服务、命令的使用权限
+
 
 方法，执行命令：
 
 ```
-docker pull IMAGE_NAME
+cd cskfv9/images
+bash ./install.sh
 ```
 
-IMAGE_NAME 参考 docker-compose.yml 中各服务的 image，
-比如：
-`docker pull cskefu/contact-center:develop`
 
 春松客服包含多个 image。
-
-### 导出镜像
-
-下载好 image 后，导出 image，将所有 image 使用下面命令导出为 tgz 文件
-
-```
-docker save cskefu/contact-center:develop > cc.docker.tgz
-```
-
-### 上传镜像
-
-将所有导出的 image tgz 文件上传到目标部署的服务器
-即网络条件不好的机器，比如用 FTP 工具或 SCP 命令。
-
-### 安装镜像
-
-上传到目标机器后，安装镜像
-`docker load < cc.docker.tgz`
-
 安装成功后，会提示。
 
 ### 启动服务
@@ -182,7 +152,7 @@ docker save cskefu/contact-center:develop > cc.docker.tgz
 启动春松客服，参考本章以上内容。
 
 ```
-cd cskefu # 源文件下载地址
+cd cskfv9/sourcecodes # 源文件下载地址
 docker-compose up -d contact-center
 ```
 

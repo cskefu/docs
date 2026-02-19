@@ -43,6 +43,8 @@ sidebar_position: 2
     - **社交媒体:** 按照向导授权 Facebook、WhatsApp 或 Telegram 账号。
         
 
+![](../../../static/img/products/Pasted%20image%2020260219145028.png)
+
 ### 3. 添加人工座席 (Agents)
 
 - 路径：`设置 (Settings)` -> `代理 (Agents)`。

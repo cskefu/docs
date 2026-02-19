@@ -50,11 +50,12 @@ sidebar_position: 1
 - **部署代码：** * 完成设置后，系统会生成一段 **JavaScript SDK 代码**。
     
     - 将这段代码粘贴到你网站 HTML 源代码的 `</body>` 标签之前。
-        
+
+![](../../../static/img/products/Pasted%20image%2020260219165756.png)
+	
 - **分配坐席：** 选择哪些坐席有权查看并回复这个网页渠道的消息。
     
 ![](../../../static/img/products/Pasted%20image%2020260219165136.png)
-
 
 ---
 

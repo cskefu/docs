@@ -45,7 +45,7 @@ POST http://IP:PORT/tokens?username=USERNAME&password=PASSWORD
 
 | key      | 描述         |
 | -------- | ------------ |
-| IP       | 春松客服 IP  |
+| IP       |春松客服IP  |
 | PORT     | 春松客服端口 |
 | USERNAME | 用户名       |
 | PASSWORD | 密码         |

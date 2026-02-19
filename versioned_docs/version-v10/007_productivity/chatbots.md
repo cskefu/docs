@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # AI 机器人
 
-在 春松客服 中，**AI 机器人**（AI Bot）的集成不仅仅是为了“自动回复”，更是为了打造一个能思考、能协作的智能服务中心。春松客服 作为一个开源框架，其 AI 能力主要通过 **外部集成（Dialogflow/Rasa）**、**原生 AI 辅助 (春松客服 AI)** 以及 **Webhooks** 三种方式实现。
+在春松客服中，**AI 机器人**（AI Bot）的集成不仅仅是为了“自动回复”，更是为了打造一个能思考、能协作的智能服务中心。春松客服 作为一个开源框架，其 AI 能力主要通过 **外部集成（Dialogflow/Rasa）**、**原生 AI 辅助 (春松客服 AI)** 以及 **Webhooks** 三种方式实现。
 
 ![](../../../static/img/products/Pasted%20image%2020260219152255.png)
 
-以下是 春松客服 AI 机器人的详细功能介绍：
+以下是春松客服AI 机器人的详细功能介绍：
 
 ---
 
@@ -18,10 +18,10 @@ sidebar_position: 1
 
 春松客服 与 Google 的 **Dialogflow** 有原生集成。
 
-* **实现逻辑：** 客户发送消息 -> 春松客服 将消息转发给 Dialogflow -> Dialogflow 进行意图识别（Intent）并返回回复内容。
+* **实现逻辑：** 客户发送消息 ->春松客服将消息转发给 Dialogflow -> Dialogflow 进行意图识别（Intent）并返回回复内容。
 * **平滑切换：** 机器人处理不了时，可以通过设置“分流（Handoff）”，自动将对话转交给人类坐席，客服在后台能看到机器人之前的所有聊天记录。
 
-### B. 春松客服 AI 助手（基于 OpenAI/LLM/Chatopera 机器人平台）
+### B.春松客服AI 助手（基于 OpenAI/LLM/Chatopera 机器人平台）
 
 这是春松客服近年推出的原生 AI 功能：
 

@@ -52,7 +52,7 @@ Facebook Page，也称为 Facebook 粉丝页、Facebook 页面、Facebook 主页
 
 在此，我们创建一个示例页面，在演示如何在春松客服集成 Messenger 时使用，注意：企业创建 Messenger 应用以后，可以将 Messenger 应用集成到 Facebook Page 上，Facebook Page 是企业的一个对外的主页，而并不是唯一的，Messenger 应用同时支持多种渠道，比如网页聊天、Whatsapp等。Messenger 应用的介绍是在下一环节。
 
-假设我们创建的 Facebook Page 名称：春松客服 DEMO。创建完成后，进入 春松客服 DEMO 地址，这时，我们是管理员视图，点击“访客视图”，就是普通访客看到的页面。
+假设我们创建的 Facebook Page 名称：春松客服 DEMO。创建完成后，进入春松客服DEMO 地址，这时，我们是管理员视图，点击“访客视图”，就是普通访客看到的页面。
 
 ![访客视图](../../images/products/cskefu/messenger/image2021-2-2_20-10-36.png)
 
@@ -154,7 +154,7 @@ Facebook 商户账号（ <https://business.facebook.com/> ）是管理企业的�
 
 | 配置项 | 描述 | 示例 |
 | --- | --- | --- |
-| 名称 | 渠道名称，可使用 Facebook Page 名字 | 春松客服 DEMO  |
+| 名称 | 渠道名称，可使用 Facebook Page 名字 |春松客服DEMO  |
 | Page ID | Facebook Page 的唯一标识。在 Messenger 应用的设置的访问口令列表中，Page ID 就是主页名称下的数字字符串  | 159955055741 |
 | Access Token | 访问 Facebook Page 的口令，每个 Facebook Page 使用不同口令。在 Messenger 应用的设置的访问口令列表中，点击【生成口令】 | xxxx |
 | Verify Token | 该值为随机字符串，由企业用户自定义 | foobar20 |

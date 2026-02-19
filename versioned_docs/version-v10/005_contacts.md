@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # 联系人
 
-在 春松客服 中，**联系人管理（Contact Management）** 是其作为“轻量级 CRM”的核心体现。它不仅记录聊天历史，还能帮你构建完整的用户画像。
+在春松客服中，**联系人管理（Contact Management）** 是其作为“轻量级 CRM”的核心体现。它不仅记录聊天历史，还能帮你构建完整的用户画像。
 
 ![](../../static/img/products/Pasted%20image%2020260219145751.png)
 

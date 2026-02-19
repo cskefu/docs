@@ -56,8 +56,8 @@ cp sample.env .env
 | COMPOSE_PROJECT_NAME | cskefu             | 服务实例的容器前缀，可以用其它字符串           |
 | MYSQL_PORT           | 8037               | MySQL 数据库映射到宿主机器使用的端口           |
 | REDIS_PORT           | 8041               | Redis 映射到宿主机器的端口                     |
-| CC_WEB_PORT          | 8035               | 春松客服 Web 服务地址映射到宿主机器的端口      |
-| CC_SOCKET_PORT       | 8036               | 春松客服 SocketIO 服务映射到宿主机器的端口     |
+| CC_WEB_PORT          | 8035               |春松客服Web 服务地址映射到宿主机器的端口      |
+| CC_SOCKET_PORT       | 8036               |春松客服SocketIO 服务映射到宿主机器的端口     |
 | ACTIVEMQ_PORT1       | 8051               | ActiveMQ 端口                                  |
 | ACTIVEMQ_PORT2       | 8052               | ActiveMQ 端口                                  |
 | ACTIVEMQ_PORT2       | 8053               | ActiveMQ 端口                                  |

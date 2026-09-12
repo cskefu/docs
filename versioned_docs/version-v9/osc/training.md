@@ -10,7 +10,14 @@ sidebar_position: 2
 * 由浅入深的介绍春松客服上线智能客服系统、运营客服工作
 * 全面介绍春松客服插件、机器人客服的等原理和使用
 
-## 春松客服大讲堂
+## 购买地址
+
+春松客服大讲堂通过 Bilibili 进行出售：
+
+[https://www.bilibili.com/cheese/play/ss346321305](https://www.bilibili.com/cheese/play/ss346321305)
+
+
+## 《春松客服大讲堂》课程内容介绍
 
 共 7 章，合计 21 学时视频，552 页 PPT 课件。
 
@@ -150,31 +157,5 @@ sidebar_position: 2
 </table>
 
 更多介绍，查看[购买地址](#购买地址)内详情。
-
-## 购买地址
-
-春松客服大讲堂通过 Chatopera 证书商店进行出售，通过购买的【证书标识】获得下载 URL 地址，或扫下图二维码。
-
-[https://store.chatopera.com/product/cskfdjt19](https://store.chatopera.com/product/cskfdjt19)
-
-![](../../../static/img/products/cskfdjt19_product_store_qr.jpg)
-
-## 下载课程文件
-
-在 [Chatopera 证书商店](https://store.chatopera.com/product/cskfdjt19) 获得到证书 ID（`LICENSE_ID`） 后，文件的下载地址为：
-
-https://store.chatopera.com/dl/${LICENSE_ID}.gz
-
-将 `${LICENSE_ID}` 替换为您的证书标识。假设上一步得到的证书标识为：`L123`，那么 URL 下载地址就是：
-
-https://store.chatopera.com/dl/L123.gz
-
-
-**将您的课程文件的 URL 下载地址在浏览器中打开，完成下载，文件大小约 3.5 GB。您也可以使用 `wget` 命令行工具从命令行终端（比如 Bash Shell）下载和解压。**
-
-```
-wget https://store.chatopera.com/dl/L123.gz -O cskfdjt.tar.gz
-tar xzfv cskfdjt.tar.gz # 进行解压
-```
 
 <!-- markup:table-caption 春松客服大讲堂课程 -->
